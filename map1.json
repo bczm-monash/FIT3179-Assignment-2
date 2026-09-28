@@ -4,7 +4,7 @@
   "width": 700,
   "height": 500,
   "data": {
-    "url": "https://raw.githubusercontent.com/tonywr71/GeoJson-Data/master/australian-states.json",
+    "url": "https://raw.githubusercontent.com/rowanhogan/australian-states/master/states.geojson",
     "format": { "type": "geojson" }
   },
   "transform": [
