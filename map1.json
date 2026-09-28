@@ -4,15 +4,18 @@
   "height": 400,
   "title": "Total RSPCA Animal Intakes by State (2024-2025)",
   "data": {
-    "url": "rspca_national_statistics_2024_2025.csv",
-    "format": {"type": "csv"}
+    "url": "rspca_national_statistics_2024_2025.csv"
   },
   "transform": [
     {
       "filter": "datum.metric == 'Total Received' && datum.animal_type == 'All animals' && datum.geography != 'Australia'"
     },
     {
-      "lookup": "geography",
+      "calculate": "{'ACT': 'Australian Capital Territory', 'NSW': 'New South Wales', 'NT': 'Northern Territory', 'QLD': 'Queensland', 'SA': 'South Australia', 'TAS': 'Tasmania', 'VIC': 'Victoria', 'WA': 'Western Australia'}[datum.geography]",
+      "as": "state_full_name"
+    },
+    {
+      "lookup": "state_full_name",
       "from": {
         "data": {
           "url": "https://raw.githubusercontent.com/rowanhogan/australian-states/master/states.geojson",
@@ -43,7 +46,7 @@
       "scale": {"scheme": "oranges"}
     },
     "tooltip": [
-      {"field": "geography", "type": "nominal", "title": "State/Territory"},
+      {"field": "state_full_name", "type": "nominal", "title": "State"},
       {"field": "value", "type": "quantitative", "title": "Total Intakes", "format": ","}
     ]
   }
