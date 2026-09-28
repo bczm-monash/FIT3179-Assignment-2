@@ -4,25 +4,18 @@
   "height": 400,
   "title": "Total RSPCA Animal Intakes by State (2024-2025)",
   "data": {
-    "url": "rspca_national_statistics_2024_2025.csv"
+    "url": "states.topojson",
+    "format": {"type": "topojson", "feature": "states"}
   },
   "transform": [
     {
-      "filter": "datum.metric == 'Total Received' && datum.animal_type == 'All animals' && datum.geography != 'Australia'"
-    },
-    {
-      "calculate": "{'ACT': 'Australian Capital Territory', 'NSW': 'New South Wales', 'NT': 'Northern Territory', 'QLD': 'Queensland', 'SA': 'South Australia', 'TAS': 'Tasmania', 'VIC': 'Victoria', 'WA': 'Western Australia'}[datum.geography]",
-      "as": "state_full_name"
-    },
-    {
-      "lookup": "state_full_name",
+      "lookup": "properties.STATE_NAME",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/rowanhogan/australian-states/master/states.geojson",
-          "format": {"type": "json", "property": "features"}
+          "url": "rspca_national_statistics_2024_2025.csv"
         },
-        "key": "properties.STATE_NAME",
-        "fields": ["type", "geometry"]
+        "key": "geography",
+        "fields": ["value"]
       }
     }
   ],
@@ -35,10 +28,6 @@
     "strokeWidth": 1
   },
   "encoding": {
-    "shape": {
-      "field": "geometry",
-      "type": "geojson"
-    },
     "color": {
       "field": "value",
       "type": "quantitative",
@@ -46,7 +35,7 @@
       "scale": {"scheme": "oranges"}
     },
     "tooltip": [
-      {"field": "state_full_name", "type": "nominal", "title": "State"},
+      {"field": "properties.STATE_NAME", "type": "nominal", "title": "State"},
       {"field": "value", "type": "quantitative", "title": "Total Intakes", "format": ","}
     ]
   }
