@@ -14,5 +14,13 @@
   <!-- This empty box is where your first map will appear -->
   <div id="my-first-map"></div>
 
+  <!-- This script connects your JSON file to the empty box -->
+  <script type="text/javascript">
+    var spec1 = "map1.json";
+    vegaEmbed('#my-first-map', spec1).then(function(result) {
+      // Access the Vega view instance as result.view
+    }).catch(console.error);
+  </script>
+
 </body>
 </html>
