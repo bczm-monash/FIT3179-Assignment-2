@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Total RSPCA Animal Intakes by State (2024-2025)",
+  "width": 600,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/bczm-monash/FIT3179-Assignment-2/main/rspca_national_statistics_2024_2025.csv"
+  },
+  "transform": [
+    {"filter": "datum.geography != 'Australia'"},
+    {"filter": "datum.metric == 'Total Received'"},
+    {"filter": "datum.animal_type == 'All animals'"}
+  ],
+  "mark": {
+    "type": "bar",
+    "cornerRadiusEnd": 4,
+    "color": "#2c7bb6"
+  },
+  "encoding": {
+    "y": {
+      "field": "geography",
+      "type": "nominal",
+      "sort": "-x",
+      "title": null,
+      "axis": {
+        "labelFontSize": 12,
+        "labelLimit": 200
+      }
+    },
+    "x": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Total Animals Received",
+      "axis": {
+        "titleFontSize": 12,
+        "grid": true
+      }
+    },
+    "tooltip": [
+      { "field": "geography", "type": "nominal", "title": "State" },
+      { "field": "value", "type": "quantitative", "title": "Intakes", "format": "," }
+    ]
+  }
+}
