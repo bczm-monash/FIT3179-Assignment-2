@@ -1,0 +1,78 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Dog Outcomes by Australian State (2024-2025)",
+    "fontSize": 16,
+    "anchor": "middle"
+  },
+  "width": 500,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/bczm-monash/FIT3179-Assignment-2/main/rspca_national_statistics_2024_2025.csv"
+  },
+  "transform": [
+    {"filter": "datum.geography != 'Australia'"},
+    {"filter": "datum.section == 'State animal outcomes'"},
+    {"filter": "datum.animal_type == 'Dogs'"},
+    {
+      "filter": "indexof(['Reclaimed', 'Rehomed', 'Euthanased', 'Transferred', 'Currently in Care'], datum.metric) !== -1"
+    }
+  ],
+  "mark": {
+    "type": "rect",
+    "tooltip": true,
+    "cornerRadius": 4
+  },
+  "encoding": {
+    "x": {
+      "field": "metric",
+      "type": "nominal",
+      "title": "Animal Outcome",
+      "sort": ["Rehomed", "Reclaimed", "Currently in Care", "Transferred", "Euthanased"],
+      "axis": {
+        "labelAngle": -45,
+        "labelFontSize": 12,
+        "titleFontSize": 13,
+        "titlePadding": 10
+      }
+    },
+    "y": {
+      "field": "geography",
+      "type": "nominal",
+      "title": "State",
+      "sort": "ascending",
+      "axis": {
+        "labelFontSize": 12,
+        "titleFontSize": 13,
+        "titlePadding": 10
+      }
+    },
+    "color": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Number of Dogs",
+      "scale": {
+        "type": "symlog", 
+        "scheme": "oranges"
+      },
+      "legend": {
+        "direction": "vertical",
+        "titleFontSize": 11
+      }
+    },
+    "tooltip": [
+      {"field": "geography", "type": "nominal", "title": "State"},
+      {"field": "metric", "type": "nominal", "title": "Outcome"},
+      {"field": "value", "type": "quantitative", "title": "Total Dogs", "format": ","}
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    },
+    "axis": {
+      "domain": false,
+      "ticks": false
+    }
+  }
+}
