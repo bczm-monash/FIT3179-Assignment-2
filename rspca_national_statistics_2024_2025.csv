@@ -1,0 +1,649 @@
+section,financial_year,geography,animal_type,metric,value,notes,source,source_url
+National animal outcomes,2024-25,Australia,Dogs,Reclaimed,3203,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National animal outcomes,2024-25,Australia,Dogs,Returned,727,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National animal outcomes,2024-25,Australia,Dogs,Rehomed,6839,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National animal outcomes,2024-25,Australia,Dogs,Currently in Care,1672,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National animal outcomes,2024-25,Australia,Dogs,Transferred,529,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National animal outcomes,2024-25,Australia,Dogs,Euthanased,2768,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National animal outcomes,2024-25,Australia,Dogs,Other,114,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National animal outcomes,2024-25,Australia,Dogs,Total Received,15852,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National animal outcomes,2024-25,Australia,Cats,Reclaimed,979,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National animal outcomes,2024-25,Australia,Cats,Returned,381,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National animal outcomes,2024-25,Australia,Cats,Rehomed,16445,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National animal outcomes,2024-25,Australia,Cats,Currently in Care,2128,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National animal outcomes,2024-25,Australia,Cats,Transferred,298,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National animal outcomes,2024-25,Australia,Cats,Euthanased,5089,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National animal outcomes,2024-25,Australia,Cats,Other,319,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National animal outcomes,2024-25,Australia,Cats,Total Received,25639,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National animal outcomes,2024-25,Australia,Other animals,Reclaimed,2752,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National animal outcomes,2024-25,Australia,Other animals,Returned,318,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National animal outcomes,2024-25,Australia,Other animals,Rehomed,3450,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National animal outcomes,2024-25,Australia,Other animals,Currently in Care,1939,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National animal outcomes,2024-25,Australia,Other animals,Transferred,6533,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National animal outcomes,2024-25,Australia,Other animals,Euthanased,19643,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National animal outcomes,2024-25,Australia,Other animals,Other,1338,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National animal outcomes,2024-25,Australia,Other animals,Total Received,35973,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National animal outcomes,2024-25,Australia,All animals,Total Received,77464,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2020-21,Australia,Dogs,Reclaimed/Returned/Rehomed/Other,19809,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2020-21,Australia,Dogs,Euthanased,2502,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2020-21,Australia,Dogs,Total Received,22311,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2020-21,Australia,Cats,Reclaimed/Returned/Rehomed/Other,33968,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2020-21,Australia,Cats,Euthanased,8604,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2020-21,Australia,Cats,Total Received,42572,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2020-21,Australia,Other animals,Reclaimed/Returned/Rehomed/Other,17597,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2020-21,Australia,Other animals,Euthanased,20577,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2020-21,Australia,Other animals,Total Received,38174,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2020-21,Australia,All animals,Total Received,103057,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2021-22,Australia,Dogs,Reclaimed/Returned/Rehomed/Other,16737,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2021-22,Australia,Dogs,Euthanased,2484,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2021-22,Australia,Dogs,Total Received,19221,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2021-22,Australia,Cats,Reclaimed/Returned/Rehomed/Other,29065,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2021-22,Australia,Cats,Euthanased,6506,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2021-22,Australia,Cats,Total Received,35571,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2021-22,Australia,Other animals,Reclaimed/Returned/Rehomed/Other,18983,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2021-22,Australia,Other animals,Euthanased,21053,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2021-22,Australia,Other animals,Total Received,40036,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2021-22,Australia,All animals,Total Received,94828,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2022-23,Australia,Dogs,Reclaimed/Returned/Rehomed/Other,15903,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2022-23,Australia,Dogs,Euthanased,2875,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2022-23,Australia,Dogs,Total Received,18778,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2022-23,Australia,Cats,Reclaimed/Returned/Rehomed/Other,27523,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2022-23,Australia,Cats,Euthanased,6224,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2022-23,Australia,Cats,Total Received,33747,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2022-23,Australia,Other animals,Reclaimed/Returned/Rehomed/Other,18228,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2022-23,Australia,Other animals,Euthanased,16712,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2022-23,Australia,Other animals,Total Received,34940,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2022-23,Australia,All animals,Total Received,87465,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2023-24,Australia,Dogs,Reclaimed/Returned/Rehomed/Other,14626,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2023-24,Australia,Dogs,Euthanased,2842,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2023-24,Australia,Dogs,Total Received,17468,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2023-24,Australia,Cats,Reclaimed/Returned/Rehomed/Other,21556,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2023-24,Australia,Cats,Euthanased,5148,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2023-24,Australia,Cats,Total Received,26704,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2023-24,Australia,Other animals,Reclaimed/Returned/Rehomed/Other,16480,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2023-24,Australia,Other animals,Euthanased,21017,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2023-24,Australia,Other animals,Total Received,37497,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2023-24,Australia,All animals,Total Received,81669,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2024-25,Australia,Dogs,Reclaimed/Returned/Rehomed/Other,13084,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2024-25,Australia,Dogs,Euthanased,2768,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2024-25,Australia,Dogs,Total Received,15852,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2024-25,Australia,Cats,Reclaimed/Returned/Rehomed/Other,20550,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2024-25,Australia,Cats,Euthanased,5089,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2024-25,Australia,Cats,Total Received,25639,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2024-25,Australia,Other animals,Reclaimed/Returned/Rehomed/Other,16330,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2024-25,Australia,Other animals,Euthanased,19643,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2024-25,Australia,Other animals,Total Received,35973,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National five-year trend,2024-25,Australia,All animals,Total Received,77464,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Dogs,Reclaimed,109,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Dogs,Reclaimed,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Dogs,Reclaimed,229,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Dogs,Reclaimed,1647,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Dogs,Reclaimed,501,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Dogs,Reclaimed,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Dogs,Reclaimed,646,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Dogs,Reclaimed,71,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Dogs,Returned,75,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Dogs,Returned,18,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Dogs,Returned,243,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Dogs,Returned,204,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Dogs,Returned,33,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Dogs,Returned,48,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Dogs,Returned,83,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Dogs,Returned,23,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Dogs,Rehomed,310,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Dogs,Rehomed,119,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Dogs,Rehomed,1350,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Dogs,Rehomed,2922,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Dogs,Rehomed,867,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Dogs,Rehomed,220,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Dogs,Rehomed,704,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Dogs,Rehomed,347,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Dogs,Currently in Care,60,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Dogs,Currently in Care,53,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Dogs,Currently in Care,442,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Dogs,Currently in Care,397,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Dogs,Currently in Care,204,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Dogs,Currently in Care,91,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Dogs,Currently in Care,199,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Dogs,Currently in Care,226,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Dogs,Transferred,5,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Dogs,Transferred,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Dogs,Transferred,162,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Dogs,Transferred,63,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Dogs,Transferred,49,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Dogs,Transferred,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Dogs,Transferred,159,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Dogs,Transferred,91,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Dogs,Euthanased,36,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Dogs,Euthanased,14,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Dogs,Euthanased,878,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Dogs,Euthanased,1133,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Dogs,Euthanased,303,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Dogs,Euthanased,20,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Dogs,Euthanased,210,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Dogs,Euthanased,174,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Dogs,Other,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Dogs,Other,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Dogs,Other,16,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Dogs,Other,35,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Dogs,Other,6,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Dogs,Other,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Dogs,Other,14,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Dogs,Other,43,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Dogs,Total Received,595,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Dogs,Total Received,204,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Dogs,Total Received,3320,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Dogs,Total Received,6401,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Dogs,Total Received,1963,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Dogs,Total Received,379,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Dogs,Total Received,2015,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Dogs,Total Received,975,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Dogs,Last Year's Total,676,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Dogs,Last Year's Total,310,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Dogs,Last Year's Total,4554,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Dogs,Last Year's Total,6531,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Dogs,Last Year's Total,1814,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Dogs,Last Year's Total,130,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Dogs,Last Year's Total,2550,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Dogs,Last Year's Total,903,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Cats,Reclaimed,120,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Cats,Reclaimed,1,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Cats,Reclaimed,122,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Cats,Reclaimed,443,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Cats,Reclaimed,117,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Cats,Reclaimed,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Cats,Reclaimed,157,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Cats,Reclaimed,19,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Cats,Returned,33,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Cats,Returned,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Cats,Returned,116,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Cats,Returned,99,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Cats,Returned,51,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Cats,Returned,22,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Cats,Returned,39,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Cats,Returned,21,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Cats,Rehomed,1433,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Cats,Rehomed,186,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Cats,Rehomed,3863,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Cats,Rehomed,4992,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Cats,Rehomed,2191,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Cats,Rehomed,488,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Cats,Rehomed,2688,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Cats,Rehomed,604,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Cats,Currently in Care,171,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Cats,Currently in Care,58,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Cats,Currently in Care,607,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Cats,Currently in Care,543,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Cats,Currently in Care,251,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Cats,Currently in Care,73,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Cats,Currently in Care,344,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Cats,Currently in Care,81,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Cats,Transferred,2,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Cats,Transferred,2,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Cats,Transferred,40,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Cats,Transferred,87,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Cats,Transferred,58,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Cats,Transferred,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Cats,Transferred,81,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Cats,Transferred,28,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Cats,Euthanased,151,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Cats,Euthanased,9,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Cats,Euthanased,1768,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Cats,Euthanased,1772,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Cats,Euthanased,663,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Cats,Euthanased,109,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Cats,Euthanased,471,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Cats,Euthanased,146,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Cats,Other,25,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Cats,Other,3,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Cats,Other,105,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Cats,Other,83,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Cats,Other,24,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Cats,Other,8,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Cats,Other,50,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Cats,Other,21,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Cats,Total Received,1935,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Cats,Total Received,259,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Cats,Total Received,6621,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Cats,Total Received,8019,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Cats,Total Received,3355,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Cats,Total Received,700,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Cats,Total Received,3830,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Cats,Total Received,920,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Cats,Last Year's Total,2065,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Cats,Last Year's Total,357,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Cats,Last Year's Total,7007,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Cats,Last Year's Total,7650,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Cats,Last Year's Total,3033,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Cats,Last Year's Total,1063,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Cats,Last Year's Total,4611,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Cats,Last Year's Total,918,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Horses,Reclaimed,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Horses,Reclaimed,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Horses,Reclaimed,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Horses,Reclaimed,2,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Horses,Reclaimed,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Horses,Reclaimed,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Horses,Reclaimed,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Horses,Reclaimed,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Horses,Returned,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Horses,Returned,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Horses,Returned,1,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Horses,Returned,2,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Horses,Returned,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Horses,Returned,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Horses,Returned,2,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Horses,Returned,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Horses,Rehomed,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Horses,Rehomed,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Horses,Rehomed,31,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Horses,Rehomed,8,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Horses,Rehomed,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Horses,Rehomed,2,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Horses,Rehomed,131,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Horses,Rehomed,6,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Horses,Currently in Care,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Horses,Currently in Care,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Horses,Currently in Care,44,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Horses,Currently in Care,9,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Horses,Currently in Care,39,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Horses,Currently in Care,3,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Horses,Currently in Care,69,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Horses,Currently in Care,17,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Horses,Transferred,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Horses,Transferred,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Horses,Transferred,1,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Horses,Transferred,1,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Horses,Transferred,18,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Horses,Transferred,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Horses,Transferred,34,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Horses,Transferred,1,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Horses,Euthanased,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Horses,Euthanased,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Horses,Euthanased,24,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Horses,Euthanased,5,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Horses,Euthanased,9,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Horses,Euthanased,5,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Horses,Euthanased,67,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Horses,Euthanased,2,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Horses,Other,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Horses,Other,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Horses,Other,2,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Horses,Other,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Horses,Other,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Horses,Other,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Horses,Other,2,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Horses,Other,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Horses,Total Received,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Horses,Total Received,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Horses,Total Received,103,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Horses,Total Received,27,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Horses,Total Received,66,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Horses,Total Received,10,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Horses,Total Received,305,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Horses,Total Received,26,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Horses,Last Year's Total,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Horses,Last Year's Total,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Horses,Last Year's Total,142,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Horses,Last Year's Total,51,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Horses,Last Year's Total,24,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Horses,Last Year's Total,19,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Horses,Last Year's Total,231,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Horses,Last Year's Total,16,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Livestock,Reclaimed,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Livestock,Reclaimed,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Livestock,Reclaimed,1,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Livestock,Reclaimed,13,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Livestock,Reclaimed,13,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Livestock,Reclaimed,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Livestock,Reclaimed,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Livestock,Reclaimed,3,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Livestock,Returned,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Livestock,Returned,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Livestock,Returned,41,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Livestock,Returned,2,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Livestock,Returned,1,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Livestock,Returned,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Livestock,Returned,1,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Livestock,Returned,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Livestock,Rehomed,43,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Livestock,Rehomed,2,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Livestock,Rehomed,104,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Livestock,Rehomed,234,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Livestock,Rehomed,40,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Livestock,Rehomed,28,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Livestock,Rehomed,32,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Livestock,Rehomed,68,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Livestock,Currently in Care,7,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Livestock,Currently in Care,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Livestock,Currently in Care,15,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Livestock,Currently in Care,32,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Livestock,Currently in Care,98,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Livestock,Currently in Care,26,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Livestock,Currently in Care,19,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Livestock,Currently in Care,5,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Livestock,Transferred,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Livestock,Transferred,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Livestock,Transferred,46,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Livestock,Transferred,16,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Livestock,Transferred,94,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Livestock,Transferred,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Livestock,Transferred,21,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Livestock,Transferred,8,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Livestock,Euthanased,11,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Livestock,Euthanased,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Livestock,Euthanased,50,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Livestock,Euthanased,196,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Livestock,Euthanased,26,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Livestock,Euthanased,2,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Livestock,Euthanased,20,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Livestock,Euthanased,25,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Livestock,Other,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Livestock,Other,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Livestock,Other,2,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Livestock,Other,16,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Livestock,Other,7,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Livestock,Other,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Livestock,Other,3,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Livestock,Other,4,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Livestock,Total Received,61,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Livestock,Total Received,2,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Livestock,Total Received,259,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Livestock,Total Received,509,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Livestock,Total Received,279,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Livestock,Total Received,56,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Livestock,Total Received,96,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Livestock,Total Received,113,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Livestock,Last Year's Total,88,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Livestock,Last Year's Total,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Livestock,Last Year's Total,406,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Livestock,Last Year's Total,404,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Livestock,Last Year's Total,310,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Livestock,Last Year's Total,2,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Livestock,Last Year's Total,176,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Livestock,Last Year's Total,98,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Wildlife,Released,1,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Wildlife,Released,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Wildlife,Released,1,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Wildlife,Released,2521,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Wildlife,Released,59,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Wildlife,Released,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Wildlife,Released,13,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Wildlife,Released,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Wildlife,Currently in Care,4,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Wildlife,Currently in Care,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Wildlife,Currently in Care,3,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Wildlife,Currently in Care,172,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Wildlife,Currently in Care,13,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Wildlife,Currently in Care,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Wildlife,Currently in Care,8,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Wildlife,Currently in Care,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Wildlife,Transferred,27,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Wildlife,Transferred,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Wildlife,Transferred,103,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Wildlife,Transferred,5591,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Wildlife,Transferred,173,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Wildlife,Transferred,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Wildlife,Transferred,18,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Wildlife,Transferred,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Wildlife,Euthanased,71,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Wildlife,Euthanased,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Wildlife,Euthanased,301,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Wildlife,Euthanased,17307,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Wildlife,Euthanased,103,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Wildlife,Euthanased,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Wildlife,Euthanased,239,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Wildlife,Euthanased,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Wildlife,Other,5,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Wildlife,Other,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Wildlife,Other,11,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Wildlife,Other,973,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Wildlife,Other,13,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Wildlife,Other,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Wildlife,Other,64,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Wildlife,Other,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Wildlife,Total Received,108,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Wildlife,Total Received,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Wildlife,Total Received,419,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Wildlife,Total Received,26564,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Wildlife,Total Received,361,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Wildlife,Total Received,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Wildlife,Total Received,342,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Wildlife,Total Received,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Wildlife,Last Year's Total,205,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Wildlife,Last Year's Total,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Wildlife,Last Year's Total,468,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Wildlife,Last Year's Total,27423,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Wildlife,Last Year's Total,328,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Wildlife,Last Year's Total,10,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Wildlife,Last Year's Total,650,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Wildlife,Last Year's Total,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Other animals,Reclaimed,19,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Other animals,Reclaimed,24,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Other animals,Reclaimed,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Other animals,Reclaimed,2,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Other animals,Reclaimed,10,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Other animals,Reclaimed,8,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Other animals,Reclaimed,12,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Other animals,Reclaimed,4,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Other animals,Returned,8,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Other animals,Returned,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Other animals,Returned,215,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Other animals,Returned,23,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Other animals,Returned,12,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Other animals,Returned,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Other animals,Returned,7,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Other animals,Returned,3,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Other animals,Rehomed,191,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Other animals,Rehomed,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Other animals,Rehomed,646,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Other animals,Rehomed,652,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Other animals,Rehomed,241,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Other animals,Rehomed,71,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Other animals,Rehomed,651,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Other animals,Rehomed,269,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Other animals,Currently in Care,8,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Other animals,Currently in Care,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Other animals,Currently in Care,117,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Other animals,Currently in Care,222,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Other animals,Currently in Care,226,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Other animals,Currently in Care,8,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Other animals,Currently in Care,743,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Other animals,Currently in Care,32,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Other animals,Transferred,1,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Other animals,Transferred,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Other animals,Transferred,167,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Other animals,Transferred,34,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Other animals,Transferred,118,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Other animals,Transferred,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Other animals,Transferred,55,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Other animals,Transferred,6,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Other animals,Euthanased,17,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Other animals,Euthanased,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Other animals,Euthanased,476,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Other animals,Euthanased,421,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Other animals,Euthanased,128,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Other animals,Euthanased,1,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Other animals,Euthanased,105,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Other animals,Euthanased,32,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Other animals,Other,11,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Other animals,Other,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Other animals,Other,54,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Other animals,Other,94,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Other animals,Other,26,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Other animals,Other,0,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Other animals,Other,40,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Other animals,Other,11,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Other animals,Total Received,249,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Other animals,Total Received,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Other animals,Total Received,1688,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Other animals,Total Received,1521,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Other animals,Total Received,772,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Other animals,Total Received,80,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Other animals,Total Received,1601,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Other animals,Total Received,356,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,Other animals,Last Year's Total,333,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,Other animals,Last Year's Total,17,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,Other animals,Last Year's Total,1898,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,Other animals,Last Year's Total,1931,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,Other animals,Last Year's Total,489,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,Other animals,Last Year's Total,121,"RSPCA ACT, NT and TAS do not include pound animals in their figures; all other states do.","RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,Other animals,Last Year's Total,1155,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,Other animals,Last Year's Total,502,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,All animals,Total Received,2948,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,All animals,Total Received,465,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,All animals,Total Received,12410,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,All animals,Total Received,43041,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,All animals,Total Received,6796,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,All animals,Total Received,1225,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,All animals,Total Received,8189,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,All animals,Total Received,2390,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,ACT,All animals,Last Year's Total,3367,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NSW,All animals,Last Year's Total,684,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,NT,All animals,Last Year's Total,14475,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,QLD,All animals,Last Year's Total,43990,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,SA,All animals,Last Year's Total,5998,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,TAS,All animals,Last Year's Total,1345,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,VIC,All animals,Last Year's Total,9373,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+State animal outcomes,2024-25,WA,All animals,Last Year's Total,2437,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,ACT,Dogs,Infectious,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,NSW,Dogs,Infectious,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,NT,Dogs,Infectious,6,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,QLD,Dogs,Infectious,28,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,SA,Dogs,Infectious,3,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,TAS,Dogs,Infectious,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,VIC,Dogs,Infectious,4,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,WA,Dogs,Infectious,22,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,ACT,Dogs,Medical,25,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,NSW,Dogs,Medical,7,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,NT,Dogs,Medical,235,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,QLD,Dogs,Medical,410,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,SA,Dogs,Medical,109,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,TAS,Dogs,Medical,17,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,VIC,Dogs,Medical,97,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,WA,Dogs,Medical,40,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,ACT,Dogs,Behavioural,11,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,NSW,Dogs,Behavioural,7,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,NT,Dogs,Behavioural,627,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,QLD,Dogs,Behavioural,672,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,SA,Dogs,Behavioural,161,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,TAS,Dogs,Behavioural,3,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,VIC,Dogs,Behavioural,100,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,WA,Dogs,Behavioural,71,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,ACT,Dogs,Legal,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,NSW,Dogs,Legal,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,NT,Dogs,Legal,2,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,QLD,Dogs,Legal,19,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,SA,Dogs,Legal,20,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,TAS,Dogs,Legal,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,VIC,Dogs,Legal,6,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,WA,Dogs,Legal,7,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,ACT,Dogs,Other,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,NSW,Dogs,Other,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,NT,Dogs,Other,8,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,QLD,Dogs,Other,4,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,SA,Dogs,Other,10,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,TAS,Dogs,Other,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,VIC,Dogs,Other,3,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,WA,Dogs,Other,34,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,ACT,Cats,Infectious,2,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,NSW,Cats,Infectious,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,NT,Cats,Infectious,246,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,QLD,Cats,Infectious,348,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,SA,Cats,Infectious,31,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,TAS,Cats,Infectious,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,VIC,Cats,Infectious,39,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,WA,Cats,Infectious,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,ACT,Cats,Medical,69,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,NSW,Cats,Medical,6,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,NT,Cats,Medical,871,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,QLD,Cats,Medical,932,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,SA,Cats,Medical,237,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,TAS,Cats,Medical,24,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,VIC,Cats,Medical,157,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,WA,Cats,Medical,83,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,ACT,Cats,Behavioural,80,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,NSW,Cats,Behavioural,3,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,NT,Cats,Behavioural,321,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,QLD,Cats,Behavioural,473,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,SA,Cats,Behavioural,383,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,TAS,Cats,Behavioural,85,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,VIC,Cats,Behavioural,179,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,WA,Cats,Behavioural,52,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,ACT,Cats,Legal,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,NSW,Cats,Legal,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,NT,Cats,Legal,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,QLD,Cats,Legal,2,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,SA,Cats,Legal,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,TAS,Cats,Legal,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,VIC,Cats,Legal,47,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,WA,Cats,Legal,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,ACT,Cats,Other,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,NSW,Cats,Other,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,NT,Cats,Other,330,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,QLD,Cats,Other,17,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,SA,Cats,Other,12,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,TAS,Cats,Other,0,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,VIC,Cats,Other,49,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Euthanasia reasons,2024-25,WA,Cats,Other,11,,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,ACT,All animals,Complaints Investigated,744,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,NSW,All animals,Complaints Investigated,16713,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,QLD,All animals,Complaints Investigated,13874,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,SA,All animals,Complaints Investigated,5125,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,TAS,All animals,Complaints Investigated,1915,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,VIC,All animals,Complaints Investigated,10206,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,WA,All animals,Complaints Investigated,7195,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,ACT,All animals,Prosecutions Finalised,5,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,NSW,All animals,Prosecutions Finalised,226,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,QLD,All animals,Prosecutions Finalised,3,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,SA,All animals,Prosecutions Finalised,37,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,TAS,All animals,Prosecutions Finalised,2,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,VIC,All animals,Prosecutions Finalised,47,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,WA,All animals,Prosecutions Finalised,61,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,ACT,All animals,Successful Prosecutions,5,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,NSW,All animals,Successful Prosecutions,119,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,QLD,All animals,Successful Prosecutions,0,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,SA,All animals,Successful Prosecutions,32,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,TAS,All animals,Successful Prosecutions,2,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,VIC,All animals,Successful Prosecutions,47,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,WA,All animals,Successful Prosecutions,59,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,ACT,All animals,Charges Laid,0,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,NSW,All animals,Charges Laid,991,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,QLD,All animals,Charges Laid,0,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,SA,All animals,Charges Laid,192,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,TAS,All animals,Charges Laid,56,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,VIC,All animals,Charges Laid,204,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,WA,All animals,Charges Laid,165,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,ACT,All animals,People Charged,5,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,NSW,All animals,People Charged,0,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,QLD,All animals,People Charged,3,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,SA,All animals,People Charged,44,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,TAS,All animals,People Charged,4,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,VIC,All animals,People Charged,49,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,WA,All animals,People Charged,59,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,ACT,All animals,Cases Pending,0,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,NSW,All animals,Cases Pending,104,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,QLD,All animals,Cases Pending,0,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,SA,All animals,Cases Pending,46,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,TAS,All animals,Cases Pending,20,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,VIC,All animals,Cases Pending,19,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,WA,All animals,Cases Pending,46,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,ACT,All animals,Routine Inspections,9,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,NSW,All animals,Routine Inspections,49,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,QLD,All animals,Routine Inspections,0,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,SA,All animals,Routine Inspections,8,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,TAS,All animals,Routine Inspections,31,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,VIC,All animals,Routine Inspections,12,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+Cruelty enforcement,2024-25,WA,All animals,Routine Inspections,0,RSPCA NT does not have the right to enforce animal welfare legislation in NT.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National cruelty trend,2019-20,Australia,All animals,Complaints,73997,Complaints total includes complaints investigated and complaints revisited.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National cruelty trend,2020-21,Australia,All animals,Complaints,73301,Complaints total includes complaints investigated and complaints revisited.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National cruelty trend,2021-22,Australia,All animals,Complaints,69014,Complaints total includes complaints investigated and complaints revisited.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National cruelty trend,2022-23,Australia,All animals,Complaints,69623,Complaints total includes complaints investigated and complaints revisited.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National cruelty trend,2023-24,Australia,All animals,Complaints,71514,Complaints total includes complaints investigated and complaints revisited.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National cruelty trend,2024-25,Australia,All animals,Complaints,67237,Complaints total includes complaints investigated and complaints revisited.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National cruelty trend,2019-20,Australia,All animals,Prosecutions,359,Finalised prosecutions.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National cruelty trend,2020-21,Australia,All animals,Prosecutions,426,Finalised prosecutions.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National cruelty trend,2021-22,Australia,All animals,Prosecutions,318,Finalised prosecutions.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National cruelty trend,2022-23,Australia,All animals,Prosecutions,251,Finalised prosecutions.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National cruelty trend,2023-24,Australia,All animals,Prosecutions,248,Finalised prosecutions.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
+National cruelty trend,2024-25,Australia,All animals,Prosecutions,381,Finalised prosecutions.,"RSPCA Australia, RSPCA National Statistics 2024-2025",https://www.rspca.org.au/about/annual-statistics/
