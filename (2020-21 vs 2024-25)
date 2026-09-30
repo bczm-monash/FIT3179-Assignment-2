@@ -1,0 +1,102 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Five-Year Trend: Total Animal Intakes (2020-21 vs 2024-25)",
+    "fontSize": 16,
+    "anchor": "middle"
+  },
+  "width": 400,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/bczm-monash/FIT3179-Assignment-2/main/rspca_national_statistics_2024_2025.csv"
+  },
+  "transform": [
+    {"filter": "datum.section == 'National five-year trend'"},
+    {"filter": "datum.metric == 'Total Received'"},
+    {"filter": "datum.animal_type != 'All animals'"},
+    {"filter": "datum.financial_year == '2020-21' || datum.financial_year == '2024-25'"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "financial_year",
+      "type": "ordinal",
+      "title": null,
+      "axis": {
+        "labelFontSize": 14,
+        "labelPadding": 10,
+        "domain": false,
+        "ticks": false,
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Total Received",
+      "axis": {
+        "titleFontSize": 13,
+        "grid": false
+      }
+    },
+    "color": {
+      "field": "animal_type",
+      "type": "nominal",
+      "title": "Animal Type",
+      "scale": {
+        "domain": ["Cats", "Dogs", "Other animals"],
+        "range": ["#d95f02", "#1b9e77", "#7570b3"]
+      },
+      "legend": {
+        "titleFontSize": 12,
+        "labelFontSize": 12,
+        "orient": "right"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "point": true,
+        "strokeWidth": 3
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 10,
+        "dy": -5,
+        "fontSize": 12,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "text": {"field": "value", "type": "quantitative", "format": ","}
+      },
+      "transform": [
+        {"filter": "datum.financial_year == '2024-25'"}
+      ]
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -10,
+        "dy": -5,
+        "fontSize": 12,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "text": {"field": "value", "type": "quantitative", "format": ","}
+      },
+      "transform": [
+        {"filter": "datum.financial_year == '2020-21'"}
+      ]
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}
