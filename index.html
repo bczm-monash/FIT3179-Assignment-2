@@ -1,26 +1,578 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-AU">
 <head>
-  <title>Data Visualisation 2</title>
-  <!-- These links act as a bridge, bringing Vega-Lite tools to your webpage -->
-  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Where do Australia's lost and surrendered pets go?</title>
+<meta name="description" content="A data story about what happens to dogs and cats in RSPCA shelters across Australia and in every Victorian shelter and pound, built with Vega-Lite.">
+<meta name="author" content="[Your name]">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.21.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0"></script>
+
+<style>
+:root {
+  --ground: #f1f4f4;
+  --paper: #ffffff;
+  --ink: #14262e;
+  --muted: #53656c;
+  --rule: #c9d4d6;
+  --accent: #23506b;
+  --note: #e2ebed;
+  --dog: #1b9e77;
+  --cat: #d95f02;
+  --sans: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent); text-underline-offset: 0.18em; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 1.5rem; }
+
+/* ---------- masthead and opening ---------- */
+.masthead { padding-top: 2.5rem; }
+.masthead h1 {
+  margin: 0;
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: 0.01em;
+  color: var(--accent);
+}
+.hook {
+  margin: 1.4rem 0 0;
+  max-width: 21em;
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: clamp(2rem, 4.6vw, 3.6rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+.hook .cat { color: var(--cat); }
+.hook .dog { color: var(--dog); }
+.byline {
+  margin: 1.6rem 0 0;
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+.intro {
+  display: grid;
+  grid-template-columns: minmax(0, 36rem) minmax(0, 1fr);
+  gap: 3rem;
+  margin-top: 2.6rem;
+  padding-top: 2rem;
+  border-top: 2px solid var(--ink);
+}
+.intro p { margin: 0 0 1em; max-width: 36rem; }
+.glossary { margin: 0; font-size: 1rem; line-height: 1.5; }
+.glossary h2 {
+  margin: 0 0 0.6rem;
+  font-family: var(--sans);
+  font-size: 1rem;
+  font-weight: 700;
+}
+.glossary dl { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 0.45rem 1.1rem; }
+.glossary dt { font-family: var(--sans); font-weight: 600; font-size: 0.95rem; }
+.glossary dd { margin: 0; color: var(--muted); }
+
+/* ---------- chapters and stories ---------- */
+.chapter { margin-top: 5.5rem; }
+.chapter-head {
+  padding-top: 1.1rem;
+  border-top: 2px solid var(--ink);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 28rem);
+  gap: 2rem;
+  align-items: baseline;
+}
+.chapter-head h2 {
+  margin: 0;
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: clamp(1.7rem, 3vw, 2.3rem);
+  letter-spacing: -0.015em;
+  line-height: 1.15;
+}
+.chapter-head p { margin: 0; color: var(--muted); font-size: 1.05rem; line-height: 1.5; }
+
+.story { margin-top: 4rem; }
+.story-head { max-width: 40rem; }
+.story-head h3 {
+  margin: 0 0 0.55rem;
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: clamp(1.35rem, 2.2vw, 1.7rem);
+  letter-spacing: -0.01em;
+  line-height: 1.22;
+}
+.story-head p { margin: 0; }
+
+.plate {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 15.5rem;
+  gap: 2.25rem;
+  align-items: start;
+  margin-top: 1.6rem;
+}
+.plate figure { margin: 0; min-width: 0; }
+.vis {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  padding: 1rem;
+  min-height: 12rem;
+  overflow: hidden;
+}
+.vis .vega-embed { display: block; max-width: 100%; }
+.vis svg { display: block; max-width: 100%; height: auto; }
+.vis .chart-error { margin: 0; font-family: var(--sans); font-size: 0.95rem; color: #8a2d0b; }
+figcaption {
+  margin-top: 0.6rem;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: var(--muted);
+  max-width: 62rem;
+}
+.note {
+  border-left: 3px solid var(--accent);
+  padding: 0.1rem 0 0.1rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.note p { margin: 0 0 0.9em; }
+.note p:last-child { margin-bottom: 0; }
+.note strong {
+  display: block;
+  margin-bottom: 0.1rem;
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--accent);
+}
+
+/* ---------- closing and notes ---------- */
+.closing { margin-top: 6rem; }
+.takeaways { margin: 1.4rem 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.25rem; }
+.takeaways li { padding-top: 1rem; border-top: 3px solid var(--accent); }
+.takeaways h3 { margin: 0 0 0.4rem; font-family: var(--sans); font-size: 1.2rem; font-weight: 700; line-height: 1.25; letter-spacing: -0.005em; }
+.takeaways p { margin: 0; font-size: 1.05rem; line-height: 1.55; }
+
+.about { margin-top: 6rem; padding: 2.5rem 0 4rem; background: var(--ink); color: #e7eef0; }
+.about a { color: #bfe0f0; }
+.about a:focus-visible { outline-color: #bfe0f0; }
+.about h2 { margin: 0 0 1.6rem; font-family: var(--sans); font-size: 1.5rem; font-weight: 700; letter-spacing: -0.01em; }
+.about-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.25rem 3.5rem; font-size: 0.98rem; line-height: 1.55; }
+.about h3 { margin: 0 0 0.5rem; font-family: var(--sans); font-size: 1.02rem; font-weight: 700; color: #ffffff; }
+.about p { margin: 0 0 0.75em; }
+.about ul { margin: 0; padding-left: 1.1rem; }
+.about li { margin-bottom: 0.45em; }
+.about .credit { margin-top: 2.5rem; padding-top: 1.2rem; border-top: 1px solid #3a4f58; font-family: var(--sans); font-size: 0.9rem; color: #b7c6cb; }
+
+/* ---------- narrower screens ---------- */
+@media (max-width: 980px) {
+  body { font-size: 1.08rem; }
+  .intro, .chapter-head { grid-template-columns: minmax(0, 1fr); gap: 1.4rem; }
+  .plate { grid-template-columns: minmax(0, 1fr); gap: 1.1rem; }
+  .takeaways, .about-grid { grid-template-columns: minmax(0, 1fr); }
+  .chapter { margin-top: 4rem; }
+}
+@media (max-width: 560px) {
+  .wrap { padding: 0 1rem; }
+  .vis { padding: 0.5rem; }
+  .glossary dl { grid-template-columns: minmax(0, 1fr); gap: 0.1rem; }
+  .glossary dd { margin-bottom: 0.6rem; }
+}
+</style>
 </head>
+
 <body>
-  
-  <h1>Animal Welfare in Australia</h1>
-  
-  <!-- This empty box is where your first map will appear -->
-  <div id="my-first-map"></div>
+<header class="wrap masthead">
+  <h1>Where do Australia's lost and surrendered pets go?</h1>
+  <p class="hook">Of every 100 cats taken in by Victorian shelters and pounds in 2025, about <span class="cat">27</span> were euthanased. For dogs, it was about <span class="dog">10</span>.</p>
+  <p class="byline">By [Your name]. FIT3179 Data Visualisation 2, Monash University. October 2026.</p>
 
-  <!-- This script connects your JSON file to the empty box -->
-  <script type="text/javascript">
-    var spec1 = "map1.json";
-    vegaEmbed('#my-first-map', spec1).then(function(result) {
-      // Access the Vega view instance as result.view
-    }).catch(console.error);
-  </script>
+  <div class="intro">
+    <div>
+      <p>Every year, tens of thousands of dogs and cats arrive at shelters and pounds. Some are strays who go home. Some are adopted by new owners. Some are euthanased.</p>
+      <p>This page uses two data sets to follow them: the RSPCA's national statistics, which show each state, and the Victorian Government's report on every shelter and pound in Victoria, which shows what happens in individual facilities. It starts with Australia and ends in Victoria.</p>
+    </div>
+    <section class="glossary" aria-labelledby="words-heading">
+      <h2 id="words-heading">Words used on this page</h2>
+      <dl>
+        <dt>Received</dt><dd>An animal taken in by a shelter or pound. Also called admitted.</dd>
+        <dt>Returned</dt><dd>The animal goes back to its owner. The data also calls this reclaimed.</dd>
+        <dt>Rehomed</dt><dd>The animal is adopted by a new owner.</dd>
+        <dt>Transferred</dt><dd>The animal is moved to another organisation to be rehomed.</dd>
+        <dt>Euthanased</dt><dd>The animal is put to sleep by a vet.</dd>
+      </dl>
+    </section>
+  </div>
+</header>
 
+<main class="wrap">
+
+  <!-- ============ CHAPTER 1 ============ -->
+  <section class="chapter" aria-labelledby="ch1">
+    <div class="chapter-head">
+      <h2 id="ch1">The RSPCA across Australia</h2>
+      <p>National figures for the 2024-25 financial year, state by state. They come from the RSPCA's own shelters, not from every pound in the country.</p>
+    </div>
+
+    <article class="story">
+      <header class="story-head">
+        <h3>Queensland takes in more than half of the RSPCA's animals</h3>
+        <p>Start with scale. In 2024-25 the RSPCA in Queensland received 43,041 animals of all kinds. That is 56% of the national total of 77,464. The Northern Territory came second with 12,410.</p>
+      </header>
+      <div class="plate">
+        <figure>
+          <div class="vis" id="c1" role="img" aria-label="Bar chart of total animals received by each state's RSPCA in 2024-25. Queensland is far ahead of every other state."></div>
+          <figcaption>Figure 1. Animals of all kinds received by each RSPCA, 2024-25. Source: RSPCA Australia, National Statistics 2024-2025.</figcaption>
+        </figure>
+        <aside class="note">
+          <p><strong>Read with care</strong>These bars show what each state's RSPCA reports, not how many animals the state has. The ACT, NT and Tasmania leave out pound animals, and New South Wales reports only 465.</p>
+        </aside>
+      </div>
+    </article>
+
+    <article class="story">
+      <header class="story-head">
+        <h3>In every state, at least half of the dogs and cats received were rehomed</h3>
+        <p>From here the page looks at dogs and cats only. The share rehomed runs from 50% in Western Australia to 69% in the ACT. The two biggest circles, Queensland and the Northern Territory, sit near the middle of that range.</p>
+      </header>
+      <div class="plate">
+        <figure>
+          <div class="vis" id="c2" role="img" aria-label="Map of Australia with a circle on each state. Circle size shows dogs and cats received and colour shows the share rehomed."></div>
+          <figcaption>Figure 2. Dogs and cats received, and the share rehomed, by state, 2024-25. Source: RSPCA Australia, National Statistics 2024-2025. State outline: Natural Earth.</figcaption>
+        </figure>
+        <aside class="note">
+          <p><strong>How to read</strong>Circle area is the number of dogs and cats received. Darker blue means a larger share was rehomed.</p>
+          <p><strong>Notice</strong>Queensland (55%) and the NT (52%) receive the most animals but rehome a smaller share than the ACT (69%).</p>
+        </aside>
+      </div>
+    </article>
+
+    <article class="story">
+      <header class="story-head">
+        <h3>The Northern Territory euthanases the largest share</h3>
+        <p>Rehoming is not the whole story. In the Northern Territory, 27% of dogs and cats received were euthanased. That is more than five times the share in New South Wales (5%). Queensland (20%), South Australia (18%) and Western Australia (17%) are also high.</p>
+      </header>
+      <div class="plate">
+        <figure>
+          <div class="vis" id="c3" role="img" aria-label="Tile map of Australian states shaded by the share of dogs and cats euthanased. The Northern Territory is darkest."></div>
+          <figcaption>Figure 3. Share of dogs and cats received that were euthanased, by state, 2024-25. Source: RSPCA Australia, National Statistics 2024-2025.</figcaption>
+        </figure>
+        <aside class="note">
+          <p><strong>How to read</strong>Each tile is one state, placed roughly where it sits on the map. Tiles are all the same size, so small states like the ACT are as easy to see as large ones.</p>
+          <p><strong>Read with care</strong>New South Wales reports very few animals, so its low share may not describe the whole state.</p>
+        </aside>
+      </div>
+    </article>
+
+    <article class="story">
+      <header class="story-head">
+        <h3>Queensland and the Northern Territory set the national picture</h3>
+        <p>This chart joins the last three. Each column is a state. Its width is the state's share of all dogs and cats received, and its height shows what happened to them. Queensland (35%) and the Northern Territory (24%) take up 59% of the width, so their outcomes count most.</p>
+      </header>
+      <div class="plate">
+        <figure>
+          <div class="vis" id="c4" role="img" aria-label="Chart of columns whose width shows each state's share of animals received and whose coloured sections show how stays ended. Queensland and the Northern Territory are the widest."></div>
+          <figcaption>Figure 4. Dogs and cats received by each state's RSPCA, and how their stays ended, 2024-25. Source: RSPCA Australia, National Statistics 2024-2025.</figcaption>
+        </figure>
+        <aside class="note">
+          <p><strong>How to read</strong>Wide column: many animals. Orange section: euthanased. Grey section: still in care or another outcome.</p>
+          <p><strong>Notice</strong>The thin column on the right is New South Wales, 1% of the total.</p>
+        </aside>
+      </div>
+    </article>
+
+    <article class="story">
+      <header class="story-head">
+        <h3>Only Queensland and Victoria return about one animal in six to its owner</h3>
+        <p>Going back to an owner is much less common than being rehomed. The share runs from 4% in New South Wales to 17% in Queensland, with Victoria close behind on 16%.</p>
+      </header>
+      <div class="plate">
+        <figure>
+          <div class="vis" id="c5" role="img" aria-label="Map of Australian states shaded by the share of dogs and cats returned to their owners. Queensland and Victoria are darkest."></div>
+          <figcaption>Figure 5. Share of dogs and cats received that were returned to their owners, by state, 2024-25. Source: RSPCA Australia, National Statistics 2024-2025. State boundaries: see About the data.</figcaption>
+        </figure>
+        <aside class="note">
+          <p><strong>How to read</strong>Darker green means a larger share went back to their owners. Animals reclaimed by an owner and animals returned to an owner are counted together.</p>
+          <p><strong>Read with care</strong>The ACT, NT and Tasmania leave out pound animals, which are the animals most likely to be claimed.</p>
+        </aside>
+      </div>
+    </article>
+  </section>
+
+  <!-- ============ CHAPTER 2 ============ -->
+  <section class="chapter" aria-labelledby="ch2">
+    <div class="chapter-head">
+      <h2 id="ch2">Five years on</h2>
+      <p>Is the number of animals changing, and what else do RSPCA teams deal with?</p>
+    </div>
+
+    <article class="story">
+      <header class="story-head">
+        <h3>The RSPCA now receives far fewer cats and dogs than in 2020-21</h3>
+        <p>Between 2020-21 and 2024-25, cats received fell by 40% (from 42,572 to 25,639) and dogs by 29% (from 22,311 to 15,852). Other animals fell by only 6%.</p>
+      </header>
+      <div class="plate">
+        <figure>
+          <div class="vis" id="c6" role="img" aria-label="Line chart comparing total animals received in 2020-21 and 2024-25 for cats, dogs and other animals. Cats and dogs fall steeply."></div>
+          <figcaption>Figure 6. National RSPCA animals received, 2020-21 compared with 2024-25. Source: RSPCA Australia, National Statistics (five-year trend).</figcaption>
+        </figure>
+        <aside class="note">
+          <p><strong>How to read</strong>Each line joins one animal group between the two years. A steeper fall means a bigger drop.</p>
+          <p><strong>Read with care</strong>The data show that intake fell, not why. Changes in reporting or in RSPCA services could play a part.</p>
+        </aside>
+      </div>
+    </article>
+
+    <article class="story">
+      <header class="story-head">
+        <h3>Behind the shelters, thousands of cruelty complaints</h3>
+        <p>RSPCA teams do more than run shelters. In 2024-25 they investigated 55,772 animal cruelty complaints across seven states and territories. New South Wales had the most (16,713), even though its shelter figures are the smallest.</p>
+      </header>
+      <div class="plate">
+        <figure>
+          <div class="vis" id="c7" role="img" aria-label="Radial bar chart of cruelty complaints investigated by each state's RSPCA. New South Wales has the longest arc, then Queensland and Victoria."></div>
+          <figcaption>Figure 7. Animal cruelty complaints investigated by each state's RSPCA, 2024-25. Source: RSPCA Australia, National Statistics 2024-2025.</figcaption>
+        </figure>
+        <aside class="note">
+          <p><strong>How to read</strong>Each ring is one state. The longer the coloured arc, the more complaints. The grey track behind each arc shows the full scale.</p>
+          <p><strong>Read with care</strong>The Northern Territory is missing because RSPCA NT cannot enforce animal welfare law there.</p>
+        </aside>
+      </div>
+    </article>
+  </section>
+
+  <!-- ============ CHAPTER 3 ============ -->
+  <section class="chapter" aria-labelledby="ch3">
+    <div class="chapter-head">
+      <h2 id="ch3">Inside Victoria</h2>
+      <p>Every Victorian shelter and pound must report what happened to its dogs and cats. For 2025 that is 68 facilities and 75,440 admissions, which makes it possible to compare one facility with another.</p>
+    </div>
+
+    <article class="story">
+      <header class="story-head">
+        <h3>Councils and a few large shelters take in most of Victoria's animals</h3>
+        <p>Council pounds took in about a third of all admissions (34%), and other shelters and rescue groups another third (34%). The two Lost Dogs Home sites handled a quarter (25%) on their own. The two RSPCA sites handled 7%.</p>
+      </header>
+      <div class="plate">
+        <figure>
+          <div class="vis" id="c8" role="img" aria-label="Waffle chart of 100 squares showing who admitted Victorian dogs and cats: council pounds 34, other shelters 34, Lost Dogs Home 25, RSPCA 7."></div>
+          <figcaption>Figure 8. Share of Victorian dog and cat admissions by type of facility, 2025. Source: Animal Welfare Victoria, Animal fate data set 2025.</figcaption>
+        </figure>
+        <aside class="note">
+          <p><strong>How to read</strong>Each square is 1% of the 75,440 admissions. Squares of one colour belong to one type of facility.</p>
+          <p><strong>Read with care</strong>The groups are mine, based on facility names. Some councils pay another facility to run their pound, so council figures are not complete.</p>
+        </aside>
+      </div>
+    </article>
+
+    <article class="story">
+      <header class="story-head">
+        <h3>Dogs tend to go home. Cats tend to be rehomed or euthanased.</h3>
+        <p>Nearly half of the dogs admitted (47%) were reclaimed by their owners, compared with only 6% of cats. Cats were more likely to be rehomed (43% against 26%), transferred (20% against 15%) or euthanased (27% against 10%).</p>
+      </header>
+      <div class="plate">
+        <figure>
+          <div class="vis" id="c9" role="img" aria-label="Dumbbell chart comparing dogs and cats on five outcomes as a share of animals admitted. Dogs lead on being reclaimed, cats lead on being rehomed, transferred and euthanased."></div>
+          <figcaption>Figure 9. What happened to dogs and cats after admission, as a share of animals admitted, Victoria 2025. Source: Animal Welfare Victoria, Animal fate data set 2025.</figcaption>
+        </figure>
+        <aside class="note">
+          <p><strong>How to read</strong>Each row is one outcome. The green dot is dogs and the orange dot is cats. The further right, the larger the share of animals admitted.</p>
+          <p><strong>Read with care</strong>Admissions count every arrival, so an animal admitted twice counts twice. The shares are close estimates.</p>
+        </aside>
+      </div>
+    </article>
+
+    <article class="story">
+      <header class="story-head">
+        <h3>Cats are often euthanased for being wild. Dogs, mostly for behaviour.</h3>
+        <p>More than half of the cats euthanased (6,682 of 12,822) were unidentified, wild or uncontrollable cats, a reason that applies only to cats. For dogs, behaviour (1,148) and being unsuitable for sale (1,130) account for 78% of the 2,907 euthanased.</p>
+      </header>
+      <div class="plate">
+        <figure>
+          <div class="vis" id="c10" role="img" aria-label="Butterfly chart of reasons for euthanasia. Dogs extend to the left and cats to the right. Unidentified and wild cats is the largest bar."></div>
+          <figcaption>Figure 10. Reasons dogs and cats were euthanased, Victoria 2025. Source: Animal Welfare Victoria, Animal fate data set 2025.</figcaption>
+        </figure>
+        <aside class="note">
+          <p><strong>How to read</strong>Dogs extend to the left and cats to the right from the centre line. Reasons are sorted from the largest total to the smallest.</p>
+          <p><strong>Read with care</strong>These are counts, not shares. Cats were admitted far more often (47,581 against 27,859), so longer cat bars partly reflect their numbers.</p>
+        </aside>
+      </div>
+    </article>
+
+    <article class="story">
+      <header class="story-head">
+        <h3>Where an animal ends up changes its odds</h3>
+        <p>Among the 15 busiest facilities, the share euthanased runs from 5% at the Cat Protection Society of Victoria and the City of Ballarat Animal Shelter to 47% at the Mildura Rural City Council Pound. Both Lost Dogs Home sites are about a third (32% and 33%).</p>
+      </header>
+      <div class="plate">
+        <figure>
+          <div class="vis" id="c11" role="img" aria-label="Heatmap of the 15 busiest Victorian facilities against five outcomes, showing the share of admissions that reached each outcome. Mildura has the highest euthanasia share."></div>
+          <figcaption>Figure 11. Outcomes at Victoria's 15 busiest facilities (1,400 or more admissions), as a share of admissions, 2025. Source: Animal Welfare Victoria, Animal fate data set 2025.</figcaption>
+        </figure>
+        <aside class="note">
+          <p><strong>How to read</strong>Each row is a facility, from busiest at the top. Darker blue means a larger share of its animals had that outcome.</p>
+          <p><strong>Read with care</strong>Brimbank and Wyndham transferred 99% and 72% of their animals to other organisations, so their euthanasia figures cannot show the full story.</p>
+        </aside>
+      </div>
+    </article>
+
+    <article class="story">
+      <header class="story-head">
+        <h3>Across Victoria, rates range from near zero to three in four</h3>
+        <p>Each dot is one of the 55 facilities with at least 100 admissions. The statewide rate is 21%, and 35 of the 55 sit below 20%. A few small council pounds are far to the right, such as Hindmarsh Shire (75% of 193 admissions) and Strathbogie (65% of 240).</p>
+      </header>
+      <div class="plate">
+        <figure>
+          <div class="vis" id="c12" role="img" aria-label="Dot plot of 55 Victorian facilities by the share of admissions that ended in euthanasia, from near zero to 75 percent, with a dashed line at the statewide rate."></div>
+          <figcaption>Figure 12. Share of admissions that ended in euthanasia at each Victorian facility with 100 or more admissions, 2025. Source: Animal Welfare Victoria, Animal fate data set 2025.</figcaption>
+        </figure>
+        <aside class="note">
+          <p><strong>How to read</strong>Each dot is a facility. Dots further right euthanase a larger share of their admissions. Dots stack when facilities have similar rates.</p>
+          <p><strong>Read with care</strong>Small facilities swing widely on a handful of animals. Thirteen facilities with fewer than 100 admissions are left out.</p>
+        </aside>
+      </div>
+    </article>
+  </section>
+
+  <!-- ============ CLOSING ============ -->
+  <section class="closing" aria-labelledby="close">
+    <div class="chapter-head">
+      <h2 id="close">What to take away</h2>
+      <p>Three points from the two data sets.</p>
+    </div>
+    <ul class="takeaways">
+      <li>
+        <h3>Most animals leave care alive</h3>
+        <p>Across RSPCA states the share euthanased runs from 5% to 27%, and in Victoria it is 21% overall. Rehoming and going home are far more common.</p>
+      </li>
+      <li>
+        <h3>Where and what the animal is both matter</h3>
+        <p>The same state has facilities at 5% and at 47%. Dogs are far more likely to go home, while cats are more likely to be rehomed or euthanased.</p>
+      </li>
+      <li>
+        <h3>Counting differs, so compare with care</h3>
+        <p>Some RSPCA states leave out pounds, and Victorian facilities report events and animals in different ways. The charts show patterns, not exact league tables.</p>
+      </li>
+    </ul>
+  </section>
+</main>
+
+<!-- ============ ABOUT THE DATA ============ -->
+<footer class="about">
+  <div class="wrap">
+    <h2>About the data</h2>
+    <div class="about-grid">
+      <div>
+        <h3>Data sources</h3>
+        <ul>
+          <li><strong>RSPCA Australia.</strong> <em>RSPCA National Statistics 2024-2025</em>, financial years 2020-21 to 2024-25, by state. <a href="https://www.rspca.org.au/about/annual-statistics/">rspca.org.au/about/annual-statistics</a>. Compiled into one CSV in this repository. Figures 1 to 7.</li>
+          <li><strong>Animal Welfare Victoria</strong>, Department of Energy, Environment and Climate Action. <em>Animal fate data set 2025</em>, mandatory annual reporting by Victorian shelters and pounds for the 2025 calendar year, published 27 August 2026. <a href="https://agriculture.vic.gov.au/livestock-and-animals/animal-welfare-victoria/domestic-animals-act/animal-fate-data-set">agriculture.vic.gov.au</a>. Material is copyright of the State Government of Victoria. Figures 8 to 12.</li>
+          <li><strong>Map outlines.</strong> Australia outline: Natural Earth, 1:110m countries (public domain), <a href="https://www.naturalearthdata.com/">naturalearthdata.com</a>. State and territory boundaries: simplified TopoJSON based on Australian Bureau of Statistics boundary files (CC BY 4.0), via <a href="https://github.com/sherwinzxw/australian-spatial-data">github.com/sherwinzxw/australian-spatial-data</a>.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>How the numbers were prepared</h3>
+        <ul>
+          <li>Dogs and cats are combined except where a chart separates them.</li>
+          <li>RSPCA outcomes were grouped: reclaimed and returned became returned to owner, and currently in care and other became still in care or other.</li>
+          <li>Victorian admissions and most outcomes count events, while euthanasia and deaths count unique animals. Shares of admissions are therefore approximate.</li>
+          <li>Facility types in Figure 8 come from facility names. The data set has no type column.</li>
+          <li>Victorian cat euthanasia includes the separate category for unidentified, wild or uncontrollable cats.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Limits to keep in mind</h3>
+        <ul>
+          <li>RSPCA figures cover RSPCA shelters, not every pound in a state. The ACT, NT and Tasmania leave out pound animals, and NSW reports few animals.</li>
+          <li>Not every Victorian council is listed, because some contract their pound to another facility. That facility's figures can include animals from outside the council shown.</li>
+          <li>The data show what happened to animals, not why. Nothing here proves that one facility is better or worse than another.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Tools and acknowledgement of AI</h3>
+        <ul>
+          <li>Charts are written in <a href="https://vega.github.io/vega-lite/">Vega-Lite</a> and embedded with Vega-Embed. Each chart's JSON specification is in the <a href="https://github.com/bczm-monash/FIT3179-Assignment-2/tree/main/specs">specs folder</a> of this repository.</li>
+          <li>Type: Bricolage Grotesque and Newsreader, from Google Fonts.</li>
+          <li>Generative AI (Claude, by Anthropic) helped write the chart specifications, the page code and some of the text. I chose the topic and data, checked the charts against the data and am responsible for the final work.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="credit">[Your name]. FIT3179 Data Visualisation 2, Monash University, Semester 2, 2026. Page dated October 2026.</p>
+  </div>
+</footer>
+
+<noscript><p class="wrap">The charts on this page need JavaScript. Please turn it on and reload.</p></noscript>
+
+<script>
+(function () {
+  var FONT = "Bricolage Grotesque, Helvetica Neue, Arial, sans-serif";
+  var charts = [
+    { id: "c1",  file: "rspca_total_intakes_bar_chart.json" },
+    { id: "c2",  file: "rspca_state_symbol_map.json" },
+    { id: "c3",  file: "euthanasia_tile_grid_map.json" },
+    { id: "c4",  file: "rspca_state_marimekko_chart.json" },
+    { id: "c5",  file: "rspca_returned_to_owner_choropleth.json" },
+    { id: "c6",  file: "five_year_trend_slope_chart.json" },
+    { id: "c7",  file: "cruelty_complaints_radial_chart.json" },
+    { id: "c8",  file: "victoria_intake_waffle_chart.json" },
+    { id: "c9",  file: "victoria_outcomes_dumbbell_chart.json" },
+    { id: "c10", file: "euthanasia_reasons_butterfly_chart.json" },
+    { id: "c11", file: "victoria_facilities_heatmap.json" },
+    { id: "c12", file: "victoria_facility_beeswarm_chart.json" }
+  ];
+
+  // Make each chart shrink to fit narrow screens instead of scrolling sideways.
+  function fit(container) {
+    var svg = container.querySelector("svg");
+    if (!svg) return;
+    var w = svg.getAttribute("width"), h = svg.getAttribute("height");
+    if (w && h) svg.setAttribute("viewBox", "0 0 " + parseFloat(w) + " " + parseFloat(h));
+  }
+
+  function showError(el, file, err) {
+    el.innerHTML = "";
+    var p = document.createElement("p");
+    p.className = "chart-error";
+    p.textContent = "This chart could not load (specs/" + file + "). Check that the spec and its data file are in the repository.";
+    el.appendChild(p);
+    if (window.console) console.error(file, err);
+  }
+
+  if (typeof vegaEmbed === "undefined") {
+    charts.forEach(function (c) { showError(document.getElementById(c.id), c.file, "Vega libraries did not load"); });
+    return;
+  }
+
+  charts.forEach(function (c) {
+    var el = document.getElementById(c.id);
+    vegaEmbed("#" + c.id, "specs/" + c.file, {
+      actions: false,
+      renderer: "svg",
+      config: { font: FONT }
+    }).then(function () { fit(el); }).catch(function (err) { showError(el, c.file, err); });
+  });
+})();
+</script>
 </body>
 </html>
