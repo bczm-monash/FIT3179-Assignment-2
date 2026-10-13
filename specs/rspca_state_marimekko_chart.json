@@ -1,0 +1,374 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Size Versus Outcome: RSPCA Dogs and Cats by State (2024-25)",
+    "subtitle": [
+      "Column width = animals received. Column height = how their stays ended.",
+      "NSW is very thin because RSPCA NSW reports few animals."
+    ],
+    "fontSize": 16,
+    "anchor": "middle"
+  },
+  "width": 560,
+  "height": 360,
+  "data": {
+    "url": "https://raw.githubusercontent.com/bczm-monash/FIT3179-Assignment-2/main/rspca_national_statistics_2024_2025.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.section == 'State animal outcomes'"
+    },
+    {
+      "filter": "datum.animal_type == 'Dogs' || datum.animal_type == 'Cats'"
+    },
+    {
+      "filter": "datum.metric != 'Total Received' && datum.metric != \"Last Year's Total\""
+    },
+    {
+      "calculate": "(datum.metric == 'Reclaimed' || datum.metric == 'Returned') ? 'Returned to owner' : datum.metric == 'Rehomed' ? 'Rehomed' : datum.metric == 'Transferred' ? 'Transferred' : datum.metric == 'Euthanased' ? 'Euthanased' : 'Other / still in care'",
+      "as": "outcome"
+    },
+    {
+      "aggregate": [
+        {
+          "op": "sum",
+          "field": "value",
+          "as": "count"
+        }
+      ],
+      "groupby": [
+        "geography",
+        "outcome"
+      ]
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "sum",
+          "field": "count",
+          "as": "total"
+        },
+        {
+          "op": "count",
+          "as": "nrow"
+        }
+      ],
+      "groupby": [
+        "geography"
+      ]
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "sum",
+          "field": "count",
+          "as": "grand"
+        }
+      ]
+    },
+    {
+      "calculate": "indexof([\"Returned to owner\", \"Rehomed\", \"Transferred\", \"Euthanased\", \"Other / still in care\"], datum.outcome)",
+      "as": "ord"
+    },
+    {
+      "calculate": "datum.count / datum.total",
+      "as": "share"
+    },
+    {
+      "calculate": "datum.total / datum.grand",
+      "as": "width"
+    },
+    {
+      "calculate": "datum.width / datum.nrow",
+      "as": "wRow"
+    },
+    {
+      "window": [
+        {
+          "op": "dense_rank",
+          "as": "srank"
+        }
+      ],
+      "sort": [
+        {
+          "field": "total",
+          "order": "descending"
+        },
+        {
+          "field": "geography"
+        }
+      ]
+    },
+    {
+      "window": [
+        {
+          "op": "row_number",
+          "as": "rn"
+        }
+      ],
+      "groupby": [
+        "geography"
+      ],
+      "sort": [
+        {
+          "field": "ord"
+        }
+      ]
+    },
+    {
+      "window": [
+        {
+          "op": "sum",
+          "field": "wRow",
+          "as": "cumW"
+        }
+      ],
+      "sort": [
+        {
+          "field": "srank"
+        },
+        {
+          "field": "ord"
+        }
+      ],
+      "frame": [
+        null,
+        0
+      ]
+    },
+    {
+      "calculate": "datum.cumW - datum.rn * datum.wRow",
+      "as": "x0"
+    },
+    {
+      "calculate": "datum.x0 + datum.width",
+      "as": "x1"
+    },
+    {
+      "calculate": "(datum.x0 + datum.x1) / 2",
+      "as": "xm"
+    },
+    {
+      "window": [
+        {
+          "op": "sum",
+          "field": "share",
+          "as": "yc"
+        }
+      ],
+      "groupby": [
+        "geography"
+      ],
+      "sort": [
+        {
+          "field": "ord"
+        }
+      ],
+      "frame": [
+        null,
+        0
+      ]
+    },
+    {
+      "calculate": "datum.yc - datum.share",
+      "as": "y0"
+    },
+    {
+      "calculate": "(datum.y0 + datum.yc) / 2",
+      "as": "ym"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "stroke": "white",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "x0",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              1
+            ]
+          },
+          "title": "Share of all animals received (column width)",
+          "axis": {
+            "format": "%",
+            "grid": false,
+            "titleFontSize": 12
+          }
+        },
+        "x2": {
+          "field": "x1"
+        },
+        "y": {
+          "field": "y0",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              1
+            ]
+          },
+          "title": "Share of each state's animals (column height)",
+          "axis": {
+            "format": "%",
+            "grid": false,
+            "titleFontSize": 12
+          }
+        },
+        "y2": {
+          "field": "yc"
+        },
+        "color": {
+          "field": "outcome",
+          "type": "nominal",
+          "title": "Outcome",
+          "scale": {
+            "domain": [
+              "Returned to owner",
+              "Rehomed",
+              "Transferred",
+              "Euthanased",
+              "Other / still in care"
+            ],
+            "range": [
+              "#4c78a8",
+              "#59a14f",
+              "#9c755f",
+              "#c4572a",
+              "#bab0ac"
+            ]
+          },
+          "legend": {
+            "orient": "bottom",
+            "direction": "horizontal"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "geography",
+            "title": "State"
+          },
+          {
+            "field": "outcome",
+            "title": "Outcome"
+          },
+          {
+            "field": "count",
+            "type": "quantitative",
+            "title": "Animals",
+            "format": ","
+          },
+          {
+            "field": "share",
+            "type": "quantitative",
+            "title": "Share of state",
+            "format": ".1%"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.ord == 0 && datum.width >= 0.05"
+        },
+        {
+          "calculate": "1",
+          "as": "top"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "baseline": "bottom",
+        "dy": -5,
+        "fontWeight": 600,
+        "fontSize": 11
+      },
+      "encoding": {
+        "x": {
+          "field": "xm",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "top",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "geography"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.ord == 0 && datum.width < 0.05"
+        },
+        {
+          "calculate": "1",
+          "as": "top"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "angle": 270,
+        "align": "left",
+        "baseline": "middle",
+        "dy": -4,
+        "fontWeight": 600,
+        "fontSize": 11
+      },
+      "encoding": {
+        "x": {
+          "field": "xm",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "top",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "geography"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.outcome == 'Euthanased' && datum.width >= 0.05"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "color": "white",
+        "fontWeight": 600
+      },
+      "encoding": {
+        "x": {
+          "field": "xm",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "ym",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "share",
+          "type": "quantitative",
+          "format": ".0%"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}

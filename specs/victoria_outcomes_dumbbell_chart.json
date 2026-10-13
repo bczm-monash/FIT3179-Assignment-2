@@ -1,0 +1,202 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "What Happens to Victorian Dogs and Cats After Admission? (2025)",
+    "fontSize": 16,
+    "anchor": "middle"
+  },
+  "width": 500,
+  "height": 260,
+  "data": {
+    "url": "https://raw.githubusercontent.com/bczm-monash/FIT3179-Assignment-2/main/2025-animal-fate-data-set-for-publication.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "Number of instances in which animals were admitted to the establishment\\'s care in the reporting period Dogs",
+        "Number of instances in which animals were admitted to the establishment\\'s care in the reporting period Cats",
+        "Number of instances in which animals were reclaimed by their owner in the reporting period Dogs",
+        "Number of instances in which animals were reclaimed by their owner in the reporting period Cats",
+        "Number of instances in which animals were rehomed by the establishment in the reporting period Dogs",
+        "Number of instances in which animals were rehomed by the establishment in the reporting period Cats",
+        "Number of instances in which animals were permanently transferred to another facility or organisation for rehoming in the reporting period Dogs",
+        "Number of instances in which animals were permanently transferred to another facility or organisation for rehoming in the reporting period Cats",
+        "disease Dogs (Number of unique animals that were euthanased in the reporting period due to:)",
+        "disease Cats (Number of unique animals that were euthanased in the reporting period due to:)",
+        "injury Dogs (Number of unique animals that were euthanased in the reporting period due to:)",
+        "injury Cats (Number of unique animals that were euthanased in the reporting period due to:)",
+        "behaviour Dogs (Number of unique animals that were euthanased in the reporting period due to:)",
+        "behaviour Cats (Number of unique animals that were euthanased in the reporting period due to:)",
+        "age Dogs (Number of unique animals that were euthanased in the reporting period due to:)",
+        "age Cats (Number of unique animals that were euthanased in the reporting period due to:)",
+        "unsuitability for sale Dogs (Number of unique animals that were euthanased in the reporting period due to:)",
+        "unsuitability for sale Cats (Number of unique animals that were euthanased in the reporting period due to:)",
+        "being unweaned and orphaned Dogs (Number of unique animals that were euthanased in the reporting period due to:)",
+        "being unweaned and orphaned Cats (Number of unique animals that were euthanased in the reporting period due to:)",
+        "Number of unique cats that were euthanased in the reporting period due to being unidentified and wild, uncontrollable, diseased Cats",
+        "Number of unique animals that died in the reporting period, but were not euthanased Dogs (Number of animals that died, but were not euthanased, in the establishment or while in foster care)",
+        "Number of unique animals that died in the reporting period, but were not euthanased Cats (Number of animals that died, but were not euthanased, in the establishment or while in foster care)"
+      ],
+      "as": [
+        "key",
+        "value"
+      ]
+    },
+    {
+      "filter": "isValid(datum.value)"
+    },
+    {
+      "calculate": "indexof(datum.key, ' Dogs') > 0 ? 'Dogs' : 'Cats'",
+      "as": "animal"
+    },
+    {
+      "calculate": "indexof(datum.key, 'died') > 0 ? 'Died in care' : indexof(datum.key, 'were admitted to') > 0 ? 'Admitted' : indexof(datum.key, 'reclaimed by their owner') > 0 ? 'Reclaimed' : indexof(datum.key, 'rehomed by the establishment') > 0 ? 'Rehomed' : indexof(datum.key, 'permanently transferred') > 0 ? 'Transferred' : 'Euthanased'",
+      "as": "outcome"
+    },
+    {
+      "aggregate": [
+        {
+          "op": "sum",
+          "field": "value",
+          "as": "count"
+        }
+      ],
+      "groupby": [
+        "animal",
+        "outcome"
+      ]
+    },
+    {
+      "calculate": "datum.outcome == 'Admitted' ? datum.count : 0",
+      "as": "adm"
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "max",
+          "field": "adm",
+          "as": "admitted"
+        }
+      ],
+      "groupby": [
+        "animal"
+      ]
+    },
+    {
+      "filter": "datum.outcome != 'Admitted'"
+    },
+    {
+      "calculate": "datum.count / datum.admitted",
+      "as": "share"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "outcome",
+      "type": "nominal",
+      "title": null,
+      "sort": [
+        "Reclaimed",
+        "Rehomed",
+        "Transferred",
+        "Euthanased",
+        "Died in care"
+      ],
+      "axis": {
+        "labelFontSize": 12,
+        "domain": false,
+        "ticks": false,
+        "labelPadding": 8
+      }
+    }
+  },
+  "layer": [
+    {
+      "transform": [
+        {
+          "pivot": "animal",
+          "value": "share",
+          "groupby": [
+            "outcome"
+          ]
+        }
+      ],
+      "mark": {
+        "type": "rule",
+        "strokeWidth": 3,
+        "color": "#bbbbbb"
+      },
+      "encoding": {
+        "x": {
+          "field": "Dogs",
+          "type": "quantitative"
+        },
+        "x2": {
+          "field": "Cats"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 160,
+        "opacity": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "share",
+          "type": "quantitative",
+          "title": "Share of animals admitted",
+          "axis": {
+            "format": "%",
+            "grid": true,
+            "titleFontSize": 12
+          }
+        },
+        "color": {
+          "field": "animal",
+          "type": "nominal",
+          "title": "Animal",
+          "scale": {
+            "domain": [
+              "Dogs",
+              "Cats"
+            ],
+            "range": [
+              "#1b9e77",
+              "#d95f02"
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "animal",
+            "title": "Animal"
+          },
+          {
+            "field": "outcome",
+            "title": "Outcome"
+          },
+          {
+            "field": "share",
+            "type": "quantitative",
+            "title": "Share of admitted",
+            "format": ".1%"
+          },
+          {
+            "field": "count",
+            "type": "quantitative",
+            "title": "Animals",
+            "format": ","
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

@@ -1,0 +1,384 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "RSPCA Dogs and Cats Received and Rehomed, by State (2024-25)",
+    "subtitle": [
+      "Circle area = dogs and cats received. Colour = share rehomed. Circles sit at each state's geographic centre.",
+      "ACT, NT and TAS do not include pound animals."
+    ],
+    "fontSize": 16,
+    "anchor": "middle"
+  },
+  "width": 560,
+  "height": 520,
+  "projection": {
+    "type": "conicEqualArea",
+    "parallels": [
+      -18,
+      -36
+    ],
+    "rotate": [
+      -134,
+      0
+    ],
+    "center": [
+      -1,
+      -27.5
+    ],
+    "scale": 818
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/bczm-monash/FIT3179-Assignment-2/main/ne_110m_admin_0_countries.json",
+        "format": {
+          "type": "topojson",
+          "feature": "Australia"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#e9ecef",
+        "stroke": "white",
+        "strokeWidth": 1
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/bczm-monash/FIT3179-Assignment-2/main/rspca_national_statistics_2024_2025.csv"
+      },
+      "transform": [
+        {
+          "filter": "datum.section == 'State animal outcomes'"
+        },
+        {
+          "filter": "datum.animal_type == 'Dogs' || datum.animal_type == 'Cats'"
+        },
+        {
+          "filter": "datum.metric == 'Rehomed' || datum.metric == 'Total Received'"
+        },
+        {
+          "pivot": "metric",
+          "value": "value",
+          "groupby": [
+            "geography"
+          ],
+          "op": "sum"
+        },
+        {
+          "calculate": "datum.Rehomed / datum['Total Received']",
+          "as": "share"
+        },
+        {
+          "lookup": "geography",
+          "from": {
+            "data": {
+              "values": [
+                {
+                  "geography": "WA",
+                  "lat": -25.3,
+                  "lon": 122.3,
+                  "dlon": 0,
+                  "dlat": -1.7
+                },
+                {
+                  "geography": "NT",
+                  "lat": -19.4,
+                  "lon": 133.4,
+                  "dlon": 0,
+                  "dlat": -2.6
+                },
+                {
+                  "geography": "QLD",
+                  "lat": -22.6,
+                  "lon": 144.3,
+                  "dlon": 0,
+                  "dlat": -3.0
+                },
+                {
+                  "geography": "NSW",
+                  "lat": -32.2,
+                  "lon": 146.9,
+                  "dlon": 2.0,
+                  "dlat": 0
+                },
+                {
+                  "geography": "ACT",
+                  "lat": -35.5,
+                  "lon": 148.9,
+                  "dlon": 2.2,
+                  "dlat": 0
+                },
+                {
+                  "geography": "VIC",
+                  "lat": -36.5,
+                  "lon": 144.2,
+                  "dlon": 0,
+                  "dlat": -2.2
+                },
+                {
+                  "geography": "TAS",
+                  "lat": -42.0,
+                  "lon": 146.6,
+                  "dlon": 2.3,
+                  "dlat": 0
+                },
+                {
+                  "geography": "SA",
+                  "lat": -30.0,
+                  "lon": 135.8,
+                  "dlon": 0,
+                  "dlat": -2.2
+                }
+              ]
+            },
+            "key": "geography",
+            "fields": [
+              "lat",
+              "lon",
+              "dlon",
+              "dlat"
+            ]
+          },
+          "as": [
+            "lat",
+            "lon",
+            "dlon",
+            "dlat"
+          ]
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "opacity": 0.85,
+        "stroke": "white",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "size": {
+          "field": "Total Received",
+          "type": "quantitative",
+          "title": "Animals received",
+          "scale": {
+            "domain": [
+              0,
+              15000
+            ],
+            "range": [
+              40,
+              2800
+            ]
+          },
+          "legend": {
+            "orient": "bottom",
+            "direction": "horizontal",
+            "values": [
+              1000,
+              5000,
+              10000,
+              15000
+            ],
+            "labelExpr": "format(datum.value, ',')",
+            "titleFontSize": 12,
+            "labelFontSize": 11
+          }
+        },
+        "color": {
+          "field": "share",
+          "type": "quantitative",
+          "title": "Share rehomed",
+          "scale": {
+            "scheme": "blues",
+            "domain": [
+              0.45,
+              0.72
+            ]
+          },
+          "legend": {
+            "orient": "bottom",
+            "direction": "horizontal",
+            "format": "%",
+            "titleFontSize": 12,
+            "labelFontSize": 11,
+            "gradientLength": 160
+          }
+        },
+        "order": {
+          "field": "Total Received",
+          "type": "quantitative",
+          "sort": "descending"
+        },
+        "tooltip": [
+          {
+            "field": "geography",
+            "title": "State"
+          },
+          {
+            "field": "Total Received",
+            "type": "quantitative",
+            "title": "Received",
+            "format": ","
+          },
+          {
+            "field": "Rehomed",
+            "type": "quantitative",
+            "title": "Rehomed",
+            "format": ","
+          },
+          {
+            "field": "share",
+            "type": "quantitative",
+            "title": "Share rehomed",
+            "format": ".1%"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/bczm-monash/FIT3179-Assignment-2/main/rspca_national_statistics_2024_2025.csv"
+      },
+      "transform": [
+        {
+          "filter": "datum.section == 'State animal outcomes'"
+        },
+        {
+          "filter": "datum.animal_type == 'Dogs' || datum.animal_type == 'Cats'"
+        },
+        {
+          "filter": "datum.metric == 'Rehomed' || datum.metric == 'Total Received'"
+        },
+        {
+          "pivot": "metric",
+          "value": "value",
+          "groupby": [
+            "geography"
+          ],
+          "op": "sum"
+        },
+        {
+          "calculate": "datum.Rehomed / datum['Total Received']",
+          "as": "share"
+        },
+        {
+          "lookup": "geography",
+          "from": {
+            "data": {
+              "values": [
+                {
+                  "geography": "WA",
+                  "lat": -25.3,
+                  "lon": 122.3,
+                  "dlon": 0,
+                  "dlat": -1.7
+                },
+                {
+                  "geography": "NT",
+                  "lat": -19.4,
+                  "lon": 133.4,
+                  "dlon": 0,
+                  "dlat": -2.6
+                },
+                {
+                  "geography": "QLD",
+                  "lat": -22.6,
+                  "lon": 144.3,
+                  "dlon": 0,
+                  "dlat": -3.0
+                },
+                {
+                  "geography": "NSW",
+                  "lat": -32.2,
+                  "lon": 146.9,
+                  "dlon": 2.0,
+                  "dlat": 0
+                },
+                {
+                  "geography": "ACT",
+                  "lat": -35.5,
+                  "lon": 148.9,
+                  "dlon": 2.2,
+                  "dlat": 0
+                },
+                {
+                  "geography": "VIC",
+                  "lat": -36.5,
+                  "lon": 144.2,
+                  "dlon": 0,
+                  "dlat": -2.2
+                },
+                {
+                  "geography": "TAS",
+                  "lat": -42.0,
+                  "lon": 146.6,
+                  "dlon": 2.3,
+                  "dlat": 0
+                },
+                {
+                  "geography": "SA",
+                  "lat": -30.0,
+                  "lon": 135.8,
+                  "dlon": 0,
+                  "dlat": -2.2
+                }
+              ]
+            },
+            "key": "geography",
+            "fields": [
+              "lat",
+              "lon",
+              "dlon",
+              "dlat"
+            ]
+          },
+          "as": [
+            "lat",
+            "lon",
+            "dlon",
+            "dlat"
+          ]
+        },
+        {
+          "calculate": "datum.lon + datum.dlon",
+          "as": "lonL"
+        },
+        {
+          "calculate": "datum.lat + datum.dlat",
+          "as": "latL"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "fontWeight": 600,
+        "color": "#333"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lonL",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "latL",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "geography"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}

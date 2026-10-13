@@ -1,0 +1,298 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Victorian Facilities Differ Widely in How Often They Euthanase (2025)",
+    "subtitle": "Each dot is one facility with 100 or more admissions",
+    "fontSize": 16,
+    "anchor": "middle"
+  },
+  "width": 520,
+  "height": 260,
+  "data": {
+    "url": "https://raw.githubusercontent.com/bczm-monash/FIT3179-Assignment-2/main/2025-animal-fate-data-set-for-publication.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "Number of instances in which animals were admitted to the establishment\\'s care in the reporting period Dogs",
+        "Number of instances in which animals were admitted to the establishment\\'s care in the reporting period Cats",
+        "disease Dogs (Number of unique animals that were euthanased in the reporting period due to:)",
+        "disease Cats (Number of unique animals that were euthanased in the reporting period due to:)",
+        "injury Dogs (Number of unique animals that were euthanased in the reporting period due to:)",
+        "injury Cats (Number of unique animals that were euthanased in the reporting period due to:)",
+        "behaviour Dogs (Number of unique animals that were euthanased in the reporting period due to:)",
+        "behaviour Cats (Number of unique animals that were euthanased in the reporting period due to:)",
+        "age Dogs (Number of unique animals that were euthanased in the reporting period due to:)",
+        "age Cats (Number of unique animals that were euthanased in the reporting period due to:)",
+        "unsuitability for sale Dogs (Number of unique animals that were euthanased in the reporting period due to:)",
+        "unsuitability for sale Cats (Number of unique animals that were euthanased in the reporting period due to:)",
+        "being unweaned and orphaned Dogs (Number of unique animals that were euthanased in the reporting period due to:)",
+        "being unweaned and orphaned Cats (Number of unique animals that were euthanased in the reporting period due to:)",
+        "Number of unique cats that were euthanased in the reporting period due to being unidentified and wild, uncontrollable, diseased Cats"
+      ],
+      "as": [
+        "key",
+        "value"
+      ]
+    },
+    {
+      "filter": "isValid(datum.value)"
+    },
+    {
+      "calculate": "indexof(datum.key, 'were admitted to') >= 0 ? 'Admitted' : 'Euthanased'",
+      "as": "outcome"
+    },
+    {
+      "aggregate": [
+        {
+          "op": "sum",
+          "field": "value",
+          "as": "count"
+        }
+      ],
+      "groupby": [
+        "Trading name",
+        "outcome"
+      ]
+    },
+    {
+      "pivot": "outcome",
+      "value": "count",
+      "groupby": [
+        "Trading name"
+      ],
+      "op": "sum"
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "sum",
+          "field": "Euthanased",
+          "as": "totE"
+        },
+        {
+          "op": "sum",
+          "field": "Admitted",
+          "as": "totA"
+        }
+      ]
+    },
+    {
+      "calculate": "datum.totE / datum.totA",
+      "as": "overall"
+    },
+    {
+      "filter": "datum.Admitted >= 100"
+    },
+    {
+      "calculate": "datum.Euthanased / datum.Admitted",
+      "as": "rate"
+    },
+    {
+      "calculate": "indexof(datum['Trading name'], 'Lost Dogs Home') >= 0 ? 'Lost Dogs Home' : indexof(datum['Trading name'], 'RSPCA') >= 0 ? 'RSPCA' : (indexof(datum['Trading name'], 'Council') >= 0 || indexof(datum['Trading name'], 'Shire') >= 0 || indexof(datum['Trading name'], 'City of') >= 0) ? 'Council pounds' : 'Other shelters and facilities'",
+      "as": "group"
+    },
+    {
+      "calculate": "floor(datum.rate * 50)",
+      "as": "bin"
+    },
+    {
+      "window": [
+        {
+          "op": "row_number",
+          "as": "rank"
+        }
+      ],
+      "groupby": [
+        "bin"
+      ],
+      "sort": [
+        {
+          "field": "Admitted",
+          "order": "descending"
+        }
+      ]
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "count",
+          "as": "n"
+        }
+      ],
+      "groupby": [
+        "bin"
+      ]
+    },
+    {
+      "calculate": "datum.rank - (datum.n + 1) / 2",
+      "as": "offset"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "strokeDash": [
+          5,
+          4
+        ],
+        "color": "#555"
+      },
+      "encoding": {
+        "x": {
+          "field": "overall",
+          "type": "quantitative",
+          "aggregate": "mean"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 6,
+        "dy": -110,
+        "fontSize": 12,
+        "color": "#555"
+      },
+      "transform": [
+        {
+          "aggregate": [
+            {
+              "op": "mean",
+              "field": "overall",
+              "as": "overall"
+            }
+          ]
+        },
+        {
+          "calculate": "'Victoria overall: ' + format(datum.overall, '.0%')",
+          "as": "lbl"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "overall",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "lbl"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "size": 110,
+        "opacity": 0.9,
+        "stroke": "white",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "rate",
+          "type": "quantitative",
+          "title": "Share of admissions that ended in euthanasia",
+          "scale": {
+            "domain": [
+              0,
+              0.8
+            ]
+          },
+          "axis": {
+            "format": "%",
+            "grid": false,
+            "titleFontSize": 12
+          }
+        },
+        "y": {
+          "field": "offset",
+          "type": "quantitative",
+          "axis": null,
+          "scale": {
+            "domain": [
+              -4,
+              4
+            ]
+          }
+        },
+        "color": {
+          "field": "group",
+          "type": "nominal",
+          "title": "Facility group",
+          "scale": {
+            "domain": [
+              "Lost Dogs Home",
+              "Council pounds",
+              "Other shelters and facilities",
+              "RSPCA"
+            ],
+            "range": [
+              "#c4572a",
+              "#4c78a8",
+              "#59a14f",
+              "#f2b134"
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "Trading name",
+            "title": "Facility"
+          },
+          {
+            "field": "Admitted",
+            "type": "quantitative",
+            "title": "Admitted",
+            "format": ","
+          },
+          {
+            "field": "Euthanased",
+            "type": "quantitative",
+            "title": "Euthanased",
+            "format": ","
+          },
+          {
+            "field": "rate",
+            "type": "quantitative",
+            "title": "Euthanasia rate",
+            "format": ".1%"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum['Trading name'] == 'Mildura Rural City Council Pound'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 9,
+        "dy": -12,
+        "fontSize": 11
+      },
+      "encoding": {
+        "x": {
+          "field": "rate",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "offset",
+          "type": "quantitative"
+        },
+        "text": {
+          "value": "Mildura: 47%"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Why Victorian Dogs and Cats Were Euthanased (2025)",
+    "fontSize": 16,
+    "anchor": "middle"
+  },
+  "width": 500,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/bczm-monash/FIT3179-Assignment-2/main/2025-animal-fate-data-set-for-publication.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "disease Dogs (Number of unique animals that were euthanased in the reporting period due to:)",
+        "disease Cats (Number of unique animals that were euthanased in the reporting period due to:)",
+        "injury Dogs (Number of unique animals that were euthanased in the reporting period due to:)",
+        "injury Cats (Number of unique animals that were euthanased in the reporting period due to:)",
+        "behaviour Dogs (Number of unique animals that were euthanased in the reporting period due to:)",
+        "behaviour Cats (Number of unique animals that were euthanased in the reporting period due to:)",
+        "age Dogs (Number of unique animals that were euthanased in the reporting period due to:)",
+        "age Cats (Number of unique animals that were euthanased in the reporting period due to:)",
+        "unsuitability for sale Dogs (Number of unique animals that were euthanased in the reporting period due to:)",
+        "unsuitability for sale Cats (Number of unique animals that were euthanased in the reporting period due to:)",
+        "being unweaned and orphaned Dogs (Number of unique animals that were euthanased in the reporting period due to:)",
+        "being unweaned and orphaned Cats (Number of unique animals that were euthanased in the reporting period due to:)",
+        "Number of unique cats that were euthanased in the reporting period due to being unidentified and wild, uncontrollable, diseased Cats"
+      ],
+      "as": [
+        "key",
+        "value"
+      ]
+    },
+    {
+      "filter": "isValid(datum.value)"
+    },
+    {
+      "calculate": "indexof(datum.key, ' Dogs (') > 0 ? 'Dogs' : 'Cats'",
+      "as": "animal"
+    },
+    {
+      "calculate": "indexof(datum.key, ' Dogs (') > 0 ? substring(datum.key, 0, indexof(datum.key, ' Dogs (')) : (indexof(datum.key, ' Cats (') > 0 ? substring(datum.key, 0, indexof(datum.key, ' Cats (')) : 'unidentified and wild cats')",
+      "as": "reason"
+    },
+    {
+      "aggregate": [
+        {
+          "op": "sum",
+          "field": "value",
+          "as": "count"
+        }
+      ],
+      "groupby": [
+        "reason",
+        "animal"
+      ]
+    },
+    {
+      "calculate": "datum.animal == 'Dogs' ? -datum.count : datum.count",
+      "as": "signed"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "cornerRadiusEnd": 3
+  },
+  "encoding": {
+    "y": {
+      "field": "reason",
+      "type": "nominal",
+      "title": null,
+      "sort": {
+        "field": "count",
+        "op": "sum",
+        "order": "descending"
+      },
+      "axis": {
+        "labelFontSize": 12,
+        "labelLimit": 220,
+        "labelPadding": 8,
+        "domain": false,
+        "ticks": false
+      }
+    },
+    "x": {
+      "field": "signed",
+      "type": "quantitative",
+      "title": "Number of animals euthanased (dogs left, cats right)",
+      "axis": {
+        "labelExpr": "abs(datum.value)",
+        "titleFontSize": 12,
+        "grid": true
+      }
+    },
+    "color": {
+      "field": "animal",
+      "type": "nominal",
+      "title": "Animal",
+      "scale": {
+        "domain": [
+          "Dogs",
+          "Cats"
+        ],
+        "range": [
+          "#1b9e77",
+          "#d95f02"
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "reason",
+        "title": "Reason"
+      },
+      {
+        "field": "animal",
+        "title": "Animal"
+      },
+      {
+        "field": "count",
+        "type": "quantitative",
+        "title": "Animals",
+        "format": ","
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

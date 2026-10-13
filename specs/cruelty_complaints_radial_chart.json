@@ -1,0 +1,218 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "RSPCA Cruelty Complaints Investigated by State (2024-25)",
+    "subtitle": [
+      "Longer arc = more complaints. NT is not shown: RSPCA NT cannot enforce animal welfare law."
+    ],
+    "fontSize": 16,
+    "anchor": "middle"
+  },
+  "width": 420,
+  "height": 420,
+  "data": {
+    "url": "https://raw.githubusercontent.com/bczm-monash/FIT3179-Assignment-2/main/rspca_national_statistics_2024_2025.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.section == 'Cruelty enforcement'"
+    },
+    {
+      "filter": "datum.metric == 'Complaints Investigated'"
+    },
+    {
+      "window": [
+        {
+          "op": "row_number",
+          "as": "rk"
+        }
+      ],
+      "sort": [
+        {
+          "field": "value",
+          "order": "descending"
+        }
+      ]
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "count",
+          "as": "n"
+        }
+      ]
+    },
+    {
+      "calculate": "40 + (datum.n - datum.rk) * 22",
+      "as": "r1"
+    },
+    {
+      "calculate": "datum.r1 + 17",
+      "as": "r2"
+    },
+    {
+      "calculate": "datum.r1 + 8.5",
+      "as": "rm"
+    },
+    {
+      "calculate": "datum.geography + '  ' + format(datum.value, ',')",
+      "as": "lbl"
+    },
+    {
+      "calculate": "18000",
+      "as": "track"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "arc",
+        "color": "#eeeeee"
+      },
+      "encoding": {
+        "theta": {
+          "field": "track",
+          "type": "quantitative",
+          "scale": {
+            "type": "linear",
+            "domain": [
+              0,
+              18000
+            ],
+            "range": [
+              0,
+              4.712389
+            ]
+          },
+          "stack": false
+        },
+        "theta2": {
+          "datum": 0
+        },
+        "radius": {
+          "field": "r1",
+          "type": "quantitative",
+          "scale": {
+            "type": "linear",
+            "domain": [
+              0,
+              200
+            ],
+            "range": [
+              0,
+              200
+            ]
+          }
+        },
+        "radius2": {
+          "field": "r2"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "arc",
+        "color": "#4c78a8"
+      },
+      "encoding": {
+        "theta": {
+          "field": "value",
+          "type": "quantitative",
+          "scale": {
+            "type": "linear",
+            "domain": [
+              0,
+              18000
+            ],
+            "range": [
+              0,
+              4.712389
+            ]
+          },
+          "stack": false
+        },
+        "theta2": {
+          "datum": 0
+        },
+        "radius": {
+          "field": "r1",
+          "type": "quantitative",
+          "scale": {
+            "type": "linear",
+            "domain": [
+              0,
+              200
+            ],
+            "range": [
+              0,
+              200
+            ]
+          }
+        },
+        "radius2": {
+          "field": "r2"
+        },
+        "tooltip": [
+          {
+            "field": "geography",
+            "title": "State"
+          },
+          {
+            "field": "value",
+            "type": "quantitative",
+            "title": "Complaints investigated",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -6,
+        "fontSize": 11,
+        "color": "#333"
+      },
+      "encoding": {
+        "theta": {
+          "datum": 0,
+          "scale": {
+            "type": "linear",
+            "domain": [
+              0,
+              18000
+            ],
+            "range": [
+              0,
+              4.712389
+            ]
+          }
+        },
+        "radius": {
+          "field": "rm",
+          "type": "quantitative",
+          "scale": {
+            "type": "linear",
+            "domain": [
+              0,
+              200
+            ],
+            "range": [
+              0,
+              200
+            ]
+          }
+        },
+        "text": {
+          "field": "lbl"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}

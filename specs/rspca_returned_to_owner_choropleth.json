@@ -1,0 +1,394 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "How Many RSPCA Dogs and Cats Go Back to Their Owners? (2024-25)",
+    "subtitle": [
+      "Share of dogs and cats received that were reclaimed or returned to their owner.",
+      "ACT, NT and TAS do not include pound animals."
+    ],
+    "fontSize": 16,
+    "anchor": "middle"
+  },
+  "width": 560,
+  "height": 520,
+  "projection": {
+    "type": "conicEqualArea",
+    "parallels": [
+      -18,
+      -36
+    ],
+    "rotate": [
+      -134,
+      0
+    ],
+    "center": [
+      -1,
+      -27.5
+    ],
+    "scale": 818
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/bczm-monash/FIT3179-Assignment-2/main/rspca_national_statistics_2024_2025.csv"
+      },
+      "transform": [
+        {
+          "filter": "datum.section == 'State animal outcomes'"
+        },
+        {
+          "filter": "datum.animal_type == 'Dogs' || datum.animal_type == 'Cats'"
+        },
+        {
+          "filter": "datum.metric == 'Reclaimed' || datum.metric == 'Returned' || datum.metric == 'Total Received'"
+        },
+        {
+          "pivot": "metric",
+          "value": "value",
+          "groupby": [
+            "geography"
+          ],
+          "op": "sum"
+        },
+        {
+          "calculate": "((datum.Reclaimed || 0) + (datum.Returned || 0)) / datum['Total Received']",
+          "as": "share"
+        },
+        {
+          "calculate": "{'NSW':0,'VIC':1,'QLD':2,'SA':3,'WA':4,'TAS':5,'NT':6,'ACT':7}[datum.geography]",
+          "as": "id"
+        },
+        {
+          "lookup": "id",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/bczm-monash/FIT3179-Assignment-2/main/au-states-topo.json",
+              "format": {
+                "type": "topojson",
+                "feature": "austates"
+              }
+            },
+            "key": "id"
+          },
+          "as": "geo"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "white",
+        "strokeWidth": 1,
+        "clip": true
+      },
+      "encoding": {
+        "shape": {
+          "field": "geo",
+          "type": "geojson"
+        },
+        "color": {
+          "field": "share",
+          "type": "quantitative",
+          "title": "Share returned to owner",
+          "scale": {
+            "scheme": "greens",
+            "domain": [
+              0,
+              0.2
+            ]
+          },
+          "legend": {
+            "orient": "bottom",
+            "direction": "horizontal",
+            "format": "%",
+            "gradientLength": 200,
+            "titleFontSize": 12,
+            "labelFontSize": 11
+          }
+        },
+        "tooltip": [
+          {
+            "field": "geography",
+            "title": "State"
+          },
+          {
+            "field": "share",
+            "type": "quantitative",
+            "title": "Returned to owner",
+            "format": ".1%"
+          },
+          {
+            "field": "Total Received",
+            "type": "quantitative",
+            "title": "Animals received",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/bczm-monash/FIT3179-Assignment-2/main/rspca_national_statistics_2024_2025.csv"
+      },
+      "transform": [
+        {
+          "filter": "datum.section == 'State animal outcomes'"
+        },
+        {
+          "filter": "datum.animal_type == 'Dogs' || datum.animal_type == 'Cats'"
+        },
+        {
+          "filter": "datum.metric == 'Reclaimed' || datum.metric == 'Returned' || datum.metric == 'Total Received'"
+        },
+        {
+          "pivot": "metric",
+          "value": "value",
+          "groupby": [
+            "geography"
+          ],
+          "op": "sum"
+        },
+        {
+          "calculate": "((datum.Reclaimed || 0) + (datum.Returned || 0)) / datum['Total Received']",
+          "as": "share"
+        },
+        {
+          "lookup": "geography",
+          "from": {
+            "data": {
+              "values": [
+                {
+                  "geography": "WA",
+                  "lon": 122.3,
+                  "lat": -25.3,
+                  "dlon": 0,
+                  "dlat": 0
+                },
+                {
+                  "geography": "NT",
+                  "lon": 133.4,
+                  "lat": -19.4,
+                  "dlon": 0,
+                  "dlat": 0
+                },
+                {
+                  "geography": "QLD",
+                  "lon": 144.3,
+                  "lat": -22.6,
+                  "dlon": 0,
+                  "dlat": 0
+                },
+                {
+                  "geography": "SA",
+                  "lon": 135.8,
+                  "lat": -30.0,
+                  "dlon": 0,
+                  "dlat": 0
+                },
+                {
+                  "geography": "NSW",
+                  "lon": 146.9,
+                  "lat": -32.2,
+                  "dlon": 0,
+                  "dlat": 0
+                },
+                {
+                  "geography": "VIC",
+                  "lon": 144.2,
+                  "lat": -36.7,
+                  "dlon": 0,
+                  "dlat": 0
+                },
+                {
+                  "geography": "TAS",
+                  "lon": 146.6,
+                  "lat": -42.0,
+                  "dlon": 0,
+                  "dlat": 0
+                },
+                {
+                  "geography": "ACT",
+                  "lon": 149.0,
+                  "lat": -35.5,
+                  "dlon": 3.0,
+                  "dlat": 0
+                }
+              ]
+            },
+            "key": "geography",
+            "fields": [
+              "lon",
+              "lat",
+              "dlon",
+              "dlat"
+            ]
+          }
+        },
+        {
+          "calculate": "datum.lon + datum.dlon",
+          "as": "lonL"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontWeight": 600,
+        "fontSize": 11,
+        "dy": -6
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lonL",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "geography"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.share > 0.12 && datum.geography != 'ACT'",
+            "value": "white"
+          },
+          "value": "#2b2b2b"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/bczm-monash/FIT3179-Assignment-2/main/rspca_national_statistics_2024_2025.csv"
+      },
+      "transform": [
+        {
+          "filter": "datum.section == 'State animal outcomes'"
+        },
+        {
+          "filter": "datum.animal_type == 'Dogs' || datum.animal_type == 'Cats'"
+        },
+        {
+          "filter": "datum.metric == 'Reclaimed' || datum.metric == 'Returned' || datum.metric == 'Total Received'"
+        },
+        {
+          "pivot": "metric",
+          "value": "value",
+          "groupby": [
+            "geography"
+          ],
+          "op": "sum"
+        },
+        {
+          "calculate": "((datum.Reclaimed || 0) + (datum.Returned || 0)) / datum['Total Received']",
+          "as": "share"
+        },
+        {
+          "lookup": "geography",
+          "from": {
+            "data": {
+              "values": [
+                {
+                  "geography": "WA",
+                  "lon": 122.3,
+                  "lat": -25.3,
+                  "dlon": 0,
+                  "dlat": 0
+                },
+                {
+                  "geography": "NT",
+                  "lon": 133.4,
+                  "lat": -19.4,
+                  "dlon": 0,
+                  "dlat": 0
+                },
+                {
+                  "geography": "QLD",
+                  "lon": 144.3,
+                  "lat": -22.6,
+                  "dlon": 0,
+                  "dlat": 0
+                },
+                {
+                  "geography": "SA",
+                  "lon": 135.8,
+                  "lat": -30.0,
+                  "dlon": 0,
+                  "dlat": 0
+                },
+                {
+                  "geography": "NSW",
+                  "lon": 146.9,
+                  "lat": -32.2,
+                  "dlon": 0,
+                  "dlat": 0
+                },
+                {
+                  "geography": "VIC",
+                  "lon": 144.2,
+                  "lat": -36.7,
+                  "dlon": 0,
+                  "dlat": 0
+                },
+                {
+                  "geography": "TAS",
+                  "lon": 146.6,
+                  "lat": -42.0,
+                  "dlon": 0,
+                  "dlat": 0
+                },
+                {
+                  "geography": "ACT",
+                  "lon": 149.0,
+                  "lat": -35.5,
+                  "dlon": 3.0,
+                  "dlat": 0
+                }
+              ]
+            },
+            "key": "geography",
+            "fields": [
+              "lon",
+              "lat",
+              "dlon",
+              "dlat"
+            ]
+          }
+        },
+        {
+          "calculate": "datum.lon + datum.dlon",
+          "as": "lonL"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "dy": 8
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lonL",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "share",
+          "type": "quantitative",
+          "format": ".0%"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.share > 0.12 && datum.geography != 'ACT'",
+            "value": "white"
+          },
+          "value": "#2b2b2b"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}
