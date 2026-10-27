@@ -1,0 +1,455 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Dogs and Cats Euthanased by State (2024-2025)",
+  "width": 560,
+  "height": 520,
+  "projection": {
+    "type": "conicEqualArea",
+    "parallels": [
+      -18,
+      -36
+    ],
+    "rotate": [
+      -134,
+      0
+    ],
+    "center": [
+      -1,
+      -27.5
+    ],
+    "scale": 818
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/bczm-monash/FIT3179-Assignment-2/main/au-states-topo.json",
+        "format": {
+          "type": "topojson",
+          "feature": "austates"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#eceff1",
+        "stroke": "#b0bec5",
+        "strokeWidth": 0.8
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "geography": "NT",
+            "lon": 133.4,
+            "lat": -19.4,
+            "lat2": -13.02,
+            "euth": 2646.0,
+            "received": 9941.0,
+            "share": 0.2662
+          },
+          {
+            "geography": "QLD",
+            "lon": 144.3,
+            "lat": -22.6,
+            "lat2": -15.6,
+            "euth": 2905.0,
+            "received": 14420.0,
+            "share": 0.2015
+          },
+          {
+            "geography": "WA",
+            "lon": 122.3,
+            "lat": -25.3,
+            "lat2": -24.53,
+            "euth": 320.0,
+            "received": 1895.0,
+            "share": 0.1689
+          },
+          {
+            "geography": "SA",
+            "lon": 135.8,
+            "lat": -30.0,
+            "lat2": -27.67,
+            "euth": 966.0,
+            "received": 5318.0,
+            "share": 0.1816
+          },
+          {
+            "geography": "NSW",
+            "lon": 146.9,
+            "lat": -32.2,
+            "lat2": -32.14,
+            "euth": 23.0,
+            "received": 463.0,
+            "share": 0.0497
+          },
+          {
+            "geography": "VIC",
+            "lon": 144.2,
+            "lat": -36.5,
+            "lat2": -34.86,
+            "euth": 681.0,
+            "received": 5845.0,
+            "share": 0.1165
+          },
+          {
+            "geography": "TAS",
+            "lon": 146.6,
+            "lat": -42.0,
+            "lat2": -41.69,
+            "euth": 129.0,
+            "received": 1079.0,
+            "share": 0.1196
+          },
+          {
+            "geography": "ACT",
+            "lon": 149.1,
+            "lat": -35.5,
+            "lat2": -35.05,
+            "euth": 187.0,
+            "received": 2530.0,
+            "share": 0.0739
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "strokeWidth": 7,
+        "strokeCap": "round",
+        "stroke": "#d94801"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "longitude2": {
+          "field": "lon"
+        },
+        "latitude2": {
+          "field": "lat2"
+        },
+        "tooltip": [
+          {
+            "field": "geography",
+            "title": "State"
+          },
+          {
+            "field": "euth",
+            "title": "Euthanased",
+            "format": ","
+          },
+          {
+            "field": "received",
+            "title": "Received",
+            "format": ","
+          },
+          {
+            "field": "share",
+            "title": "Share",
+            "format": ".1%"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "geography": "NT",
+            "lon": 133.4,
+            "lat": -19.4,
+            "lat2": -13.02,
+            "euth": 2646.0,
+            "received": 9941.0,
+            "share": 0.2662
+          },
+          {
+            "geography": "QLD",
+            "lon": 144.3,
+            "lat": -22.6,
+            "lat2": -15.6,
+            "euth": 2905.0,
+            "received": 14420.0,
+            "share": 0.2015
+          },
+          {
+            "geography": "WA",
+            "lon": 122.3,
+            "lat": -25.3,
+            "lat2": -24.53,
+            "euth": 320.0,
+            "received": 1895.0,
+            "share": 0.1689
+          },
+          {
+            "geography": "SA",
+            "lon": 135.8,
+            "lat": -30.0,
+            "lat2": -27.67,
+            "euth": 966.0,
+            "received": 5318.0,
+            "share": 0.1816
+          },
+          {
+            "geography": "NSW",
+            "lon": 146.9,
+            "lat": -32.2,
+            "lat2": -32.14,
+            "euth": 23.0,
+            "received": 463.0,
+            "share": 0.0497
+          },
+          {
+            "geography": "VIC",
+            "lon": 144.2,
+            "lat": -36.5,
+            "lat2": -34.86,
+            "euth": 681.0,
+            "received": 5845.0,
+            "share": 0.1165
+          },
+          {
+            "geography": "TAS",
+            "lon": 146.6,
+            "lat": -42.0,
+            "lat2": -41.69,
+            "euth": 129.0,
+            "received": 1079.0,
+            "share": 0.1196
+          },
+          {
+            "geography": "ACT",
+            "lon": 149.1,
+            "lat": -35.5,
+            "lat2": -35.05,
+            "euth": 187.0,
+            "received": 2530.0,
+            "share": 0.0739
+          }
+        ]
+      },
+      "mark": {
+        "type": "circle",
+        "size": 40,
+        "fill": "#7f2704"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "geography": "NT",
+            "lon": 133.4,
+            "lat": -19.4,
+            "lat2": -13.02,
+            "euth": 2646.0,
+            "received": 9941.0,
+            "share": 0.2662
+          },
+          {
+            "geography": "QLD",
+            "lon": 144.3,
+            "lat": -22.6,
+            "lat2": -15.6,
+            "euth": 2905.0,
+            "received": 14420.0,
+            "share": 0.2015
+          },
+          {
+            "geography": "WA",
+            "lon": 122.3,
+            "lat": -25.3,
+            "lat2": -24.53,
+            "euth": 320.0,
+            "received": 1895.0,
+            "share": 0.1689
+          },
+          {
+            "geography": "SA",
+            "lon": 135.8,
+            "lat": -30.0,
+            "lat2": -27.67,
+            "euth": 966.0,
+            "received": 5318.0,
+            "share": 0.1816
+          },
+          {
+            "geography": "NSW",
+            "lon": 146.9,
+            "lat": -32.2,
+            "lat2": -32.14,
+            "euth": 23.0,
+            "received": 463.0,
+            "share": 0.0497
+          },
+          {
+            "geography": "VIC",
+            "lon": 144.2,
+            "lat": -36.5,
+            "lat2": -34.86,
+            "euth": 681.0,
+            "received": 5845.0,
+            "share": 0.1165
+          },
+          {
+            "geography": "TAS",
+            "lon": 146.6,
+            "lat": -42.0,
+            "lat2": -41.69,
+            "euth": 129.0,
+            "received": 1079.0,
+            "share": 0.1196
+          },
+          {
+            "geography": "ACT",
+            "lon": 149.1,
+            "lat": -35.5,
+            "lat2": -35.05,
+            "euth": 187.0,
+            "received": 2530.0,
+            "share": 0.0739
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "dy": -10,
+        "fontWeight": 600,
+        "fontSize": 11,
+        "color": "#222"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat2",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "geography"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "geography": "NT",
+            "lon": 133.4,
+            "lat": -19.4,
+            "lat2": -13.02,
+            "euth": 2646.0,
+            "received": 9941.0,
+            "share": 0.2662
+          },
+          {
+            "geography": "QLD",
+            "lon": 144.3,
+            "lat": -22.6,
+            "lat2": -15.6,
+            "euth": 2905.0,
+            "received": 14420.0,
+            "share": 0.2015
+          },
+          {
+            "geography": "WA",
+            "lon": 122.3,
+            "lat": -25.3,
+            "lat2": -24.53,
+            "euth": 320.0,
+            "received": 1895.0,
+            "share": 0.1689
+          },
+          {
+            "geography": "SA",
+            "lon": 135.8,
+            "lat": -30.0,
+            "lat2": -27.67,
+            "euth": 966.0,
+            "received": 5318.0,
+            "share": 0.1816
+          },
+          {
+            "geography": "NSW",
+            "lon": 146.9,
+            "lat": -32.2,
+            "lat2": -32.14,
+            "euth": 23.0,
+            "received": 463.0,
+            "share": 0.0497
+          },
+          {
+            "geography": "VIC",
+            "lon": 144.2,
+            "lat": -36.5,
+            "lat2": -34.86,
+            "euth": 681.0,
+            "received": 5845.0,
+            "share": 0.1165
+          },
+          {
+            "geography": "TAS",
+            "lon": 146.6,
+            "lat": -42.0,
+            "lat2": -41.69,
+            "euth": 129.0,
+            "received": 1079.0,
+            "share": 0.1196
+          },
+          {
+            "geography": "ACT",
+            "lon": 149.1,
+            "lat": -35.5,
+            "lat2": -35.05,
+            "euth": 187.0,
+            "received": 2530.0,
+            "share": 0.0739
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "dy": -22,
+        "fontSize": 10,
+        "color": "#444"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat2",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "euth",
+          "type": "quantitative",
+          "format": ","
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}
